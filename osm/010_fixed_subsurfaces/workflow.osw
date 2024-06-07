@@ -1,0 +1,20 @@
+{
+   "created_at" : "20240605T212404Z",
+   "seed_file" : "../010_fixed_subsurfaces.osm",
+   "steps" : 
+   [
+      {
+         "arguments" : 
+         {
+            "reporting_frequency" : "timestep",
+            "variable_name" : "Zone Mean Air Temperature"
+         },
+         "description" : "This measure adds an output variable at the requested reporting frequency.",
+         "measure_dir_name" : "AddOutputVariable",
+         "modeler_description" : "The measure just passes in the string and does not validate that it is a proper variable name. It is up to the user to know this or to look at the .rdd file from a previous simulation run.",
+         "name" : "Zone Mean Air Temperature"
+      }
+   ],
+   "updated_at" : "20240606T224205Z",
+   "weather_file" : "MEX_MOR_Zacatepec.767270_TMYx.epw"
+}

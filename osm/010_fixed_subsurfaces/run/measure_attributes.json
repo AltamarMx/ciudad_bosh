@@ -1,0 +1,9 @@
+{
+  "Zone Mean Air Temperature" : 
+  {
+    "applicable" : true,
+    "key_value" : "*",
+    "reporting_frequency" : "timestep",
+    "variable_name" : "Zone Mean Air Temperature"
+  }
+}

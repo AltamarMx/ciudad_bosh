@@ -1,0 +1,75 @@
+{
+   "completed_at" : "20240606T125722Z",
+   "completed_status" : "Fail",
+   "created_at" : "20240605T212404Z",
+   "current_step" : 1,
+   "eplusout_err" : "Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.06 06:57,\n   ** Warning ** CheckEnvironmentSpecifications: SimulationControl specified doing design day simulations, but no design environments specified.\n   **   ~~~   ** ...No design environment results produced. For these results, add appropriate SizingPeriod:* objects for your simulation.\n   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.\n   **   ~~~   ** ..Location object=ZACATEPEC\n   **   ~~~   ** ..Weather File Location=Zacatepec MOR MEX SRC-TMYx WMO#=767270\n   **   ~~~   ** ..due to location differences, Latitude difference=[21.07] degrees, Longitude difference=[138.93] degrees.\n   **   ~~~   ** ..Time Zone difference=[0.0] hour(s), Elevation difference=[0.00] percent, [0.00] meters.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 48\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 70\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 30\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 36\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 99\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 76\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 86\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 53\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 55\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 57\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 14\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 16\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 18\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 20\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 3\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   ** Severe  ** FenestrationSurface:Detailed=\"FACE 6\", invalid blank Outside Boundary Condition Object\n   **   ~~~   ** ...when Base surface uses \"Surface\" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.\n   **  Fatal  ** GetSurfaceData: Errors discovered, program terminates.\n   ...Summary of Errors that led to program termination:\n   ..... Reference severe error count=16\n   ..... Last severe error=FenestrationSurface:Detailed=\"FACE 6\", invalid blank Outside Boundary Condition Object\n   ************* Warning:  Node connection errors not checked - most system input has not been read (see previous warning).\n   ************* Fatal error -- final processing.  Program exited before simulations began.  See previous error messages.\n   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.\n   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.\n   ************* EnergyPlus Terminated--Fatal Error Detected. 2 Warning; 16 Severe Errors; Elapsed Time=00hr 00min  0.12sec\n\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+   "file_paths" : 
+   [
+      "C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/generated_files",
+      "./files",
+      "./weather",
+      "../../files",
+      "../../weather",
+      "./"
+   ],
+   "hash" : "3BE77AF6",
+   "run_options" : null,
+   "seed_file" : "../009_condiciones_adiabaticas.osm",
+   "started_at" : "20240606T125708Z",
+   "steps" : 
+   [
+      {
+         "arguments" : 
+         {
+            "intersect_surfaces" : false
+         },
+         "description" : "This will look for surfaces in adjacent spaces with similar geometry and create thermal connections between them.",
+         "measure_dir_name" : "SurfaceMatching",
+         "modeler_description" : "The boundary condition will be changed to surface adn the surfaces will refer to each other.",
+         "name" : "SurfaceMatching",
+         "result" : 
+         {
+            "completed_at" : "20240606T125709Z",
+            "measure_class_name" : "SurfaceMatching",
+            "measure_display_name" : "SurfaceMatching",
+            "measure_name" : "surface_matching",
+            "measure_taxonomy" : "Envelope.Form",
+            "measure_type" : "ModelMeasure",
+            "measure_uid" : "e9c69c36-bf33-4ac4-b695-41dee26ee880",
+            "measure_version_id" : "c1ee8a75-358c-42f8-bf9f-4e41f3dd0336",
+            "measure_version_modified" : "20230602T160043Z",
+            "measure_xml_checksum" : "45097B60",
+            "started_at" : "20240606T125709Z",
+            "stderr" : "",
+            "stdout" : "[openstudio.measure.OSRunner] <Info> The initial model has 44 matched surfaces.\n[openstudio.measure.OSRunner] <Info> Matching surfaces..\n[openstudio.measure.OSRunner] <Info> The final model has 44 matched surfaces.\n",
+            "step_errors" : [],
+            "step_files" : [],
+            "step_final_condition" : "The final model has 44 matched surfaces.",
+            "step_info" : 
+            [
+               "Matching surfaces.."
+            ],
+            "step_initial_condition" : "The initial model has 44 matched surfaces.",
+            "step_result" : "Success",
+            "step_values" : 
+            [
+               {
+                  "name" : "intersect_surfaces",
+                  "value" : false
+               }
+            ],
+            "step_warnings" : []
+         }
+      },
+      {
+         "arguments" : {},
+         "description" : "This measure creates high level tables and charts pulling both from model inputs and EnergyPlus results. It has building level information as well as detail on space types, thermal zones, HVAC systems, envelope characteristics, and economics. Click the heading above a chart to view a table of the chart data.",
+         "measure_dir_name" : "OpenStudioResults",
+         "modeler_description" : "For the most part consumption data comes from the tabular EnergyPlus results, however there are a few requests added for time series results. Space type and loop details come from the OpenStudio model. The code for this is modular, making it easy to use as a template for your own custom reports. The structure of the report uses bootstrap, and the graphs use dimple js. The new measure warning section will show warnings generated by upstream measures. It will not show forward translation warnings, EnergyPlus warnings, or warnings that might be reported by this measure.",
+         "name" : "OpenStudio Results"
+      }
+   ],
+   "updated_at" : "20240606T125722Z",
+   "weather_file" : "MEX_MOR_Zacatepec.767270_TMYx.epw"
+}

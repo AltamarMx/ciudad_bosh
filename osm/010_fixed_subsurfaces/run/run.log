@@ -1,0 +1,123 @@
+[16:42:09.642406 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/run
+[16:42:09.642406 DEBUG] [openstudio.workflow.OSWorkflow] Registering that the workflow has started with the adapter
+[16:42:09.642406 DEBUG] [openstudio.workflow.OSWorkflow] Initialization - selected = true
+[16:42:09.642406 DEBUG] [openstudio.workflow.OSWorkflow] The root_dir for the datapoint is C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources
+[16:42:09.647572 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing generated files directory: C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/generated_files
+[16:42:09.647572 DEBUG] [openstudio.workflow.OSWorkflow] Creating generated files directory: C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/generated_files
+[16:42:09.647572 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing reports directory: C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/reports
+[16:42:09.647572 DEBUG] [openstudio.workflow.OSWorkflow] Finding and loading the seed file
+[16:42:09.647572 INFO] [openstudio.worklow.Util] Loading OSM model
+[16:42:09.647572 INFO] [openstudio.worklow.Util] Reading in OSM model C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/010_fixed_subsurfaces.osm
+[16:42:09.674214 DEBUG] [openstudio.osversion.VersionTranslator] Starting translation from Version 3.7.0.
+[16:42:09.694450 DEBUG] [openstudio.osversion.VersionTranslator] Initial model has 287 objects.
+[16:42:09.694450 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 287 objects in IDF form.
+[16:42:09.706475 DEBUG] [utilities.idf.Workspace] Workspace::isValid called.
+[16:42:09.741314 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 287 objects in Model form.
+[16:42:09.741314 DEBUG] [openstudio.workflow.OSWorkflow] Initialize the weather file from osw
+[16:42:09.741314 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file defined by osw MEX_MOR_Zacatepec.767270_TMYx.epw
+[16:42:09.756944 WARN] [openstudio.EpwFile] Appears there are no design condition fields in the EPW file 'C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw'
+[16:42:09.756944 DEBUG] [openstudio.EpwFile] No Daylightings Saving start Date
+[16:42:09.756944 WARN] [openstudio.EpwFile] Successive data points (2018-Jan-31 to 2020-Feb-01, ending on line 753) are greater than 1 day apart in EPW file 'C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw'. Data will be treated as typical (TMY)
+[16:42:09.818863 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[16:42:09.827390 DEBUG] [openstudio.workflow.OSWorkflow] OpenStudioMeasures - selected = true
+[16:42:09.827390 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute OpenStudio Measures
+[16:42:09.827390 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ModelMeasure
+[16:42:09.827390 DEBUG] [openstudio.workflow.OSWorkflow] Running step 0
+[16:42:09.827390 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[16:42:09.827390 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw
+[16:42:09.827390 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in 'C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/run/000_AddOutputVariable'
+[16:42:09.835068 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[16:42:09.835068 DEBUG] [openstudio.workflow.OSWorkflow] Found AddOutputVariable at primaryScriptPath: 'C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/measures/AddOutputVariable/measure.rb'
+[16:42:09.835068 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AddOutputVariable
+[16:42:09.835068 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/measures/AddOutputVariable/measure.rb
+[16:42:09.835068 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[16:42:09.835068 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[16:42:09.835068 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, szPath = 'C:\openstudioapplication-1.7.1\bin\openstudiolib.dll'
+[16:42:09.835068 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/bin/openstudiolib.dll
+[16:42:09.835068 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, found 'C:/openstudioapplication-1.7.1/bin/openstudiolib.dll'
+[16:42:10.980656 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Add Output Variable'
+[16:42:10.991825 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 2 arguments
+[16:42:10.996341 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'reporting_frequency' to 'timestep'
+[16:42:10.996341 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'variable_name' to 'Zone Mean Air Temperature'
+[16:42:10.996341 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"key_value": "*", "reporting_frequency": "timestep", "variable_name": "Zone Mean Air Temperature"}
+[16:42:10.996341 INFO] [openstudio.measure.OSRunner] The model started with 0 output variable objects.
+[16:42:10.996341 INFO] [openstudio.measure.OSRunner] Adding output variable for Zone Mean Air Temperature reporting timestep.
+[16:42:10.996341 INFO] [openstudio.measure.OSRunner] Key value for variable is *.
+[16:42:10.996341 INFO] [openstudio.measure.OSRunner] The model finished with 1 output variable objects.
+[16:42:10.996341 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[16:42:11.007404 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[16:42:11.007404 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw
+[16:42:11.007404 INFO] [openstudio.workflow.OSWorkflow] Finished applying OpenStudio Measures.
+[16:42:11.029565 DEBUG] [openstudio.workflow.OSWorkflow] Translator - selected = true
+[16:42:11.029565 INFO] [openstudio.workflow.OSWorkflow] Beginning the translation to IDF
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 62', and 'Face 71' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 5', and 'Face 35' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 47', and 'Face 56' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 68', and 'Face 87' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 32', and 'Face 11' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 31', and 'Face 12' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 49', and 'Face 28' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 52', and 'Face 13' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 54', and 'Face 29' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 67', and 'Face 88' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 44', and 'Face 9' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 85', and 'Face 17' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 69', and 'Face 15' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 27', and 'Face 10' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 77', and 'Face 84' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 74', and 'Face 21' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 78', and 'Face 83' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 75', and 'Face 19' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 38', and 'Face 97' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 ERROR] [openstudio.energyplus.ForwardTranslator] Could not resolve matched surface construction conflicts between surfaces 'Face 102', and 'Face 94'
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 37', and 'Face 4' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.044600 WARN] [openstudio.energyplus.ForwardTranslator] Both surfaces 'Face 98', and 'Face 2' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
+[16:42:11.108681 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always On Discrete', points to an object named OnOff from field 1, but that object cannot be located.
+[16:42:11.116796 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always Off Discrete', points to an object named OnOff 1 from field 1, but that object cannot be located.
+[16:42:11.116796 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always On Continuous', points to an object named Fractional from field 1, but that object cannot be located.
+[16:42:11.116796 INFO] [openstudio.workflow.OSWorkflow] Successfully translated to IDF
+[16:42:11.116796 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlusMeasures - selected = true
+[16:42:11.116796 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute EnergyPlus Measures.
+[16:42:11.116796 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type EnergyPlusMeasure
+[16:42:11.116796 INFO] [openstudio.workflow.OSWorkflow] Finished applying EnergyPlus Measures.
+[16:42:11.116796 DEBUG] [openstudio.workflow.OSWorkflow] PreProcess - selected = true
+[16:42:11.129831 INFO] [openstudio.workflow.OSWorkflow] Beginning to collect output requests from Reporting measures.
+[16:42:11.129831 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[16:42:11.129831 INFO] [openstudio.workflow.OSWorkflow] Finished collecting output requests from Reporting measures.
+[16:42:11.129831 INFO] [openstudio.workflow.OSWorkflow] Running EnergyPlus Preprocess
+[16:42:11.129831 INFO] [openstudio.workflow.OSWorkflow] Finished preprocess job for EnergyPlus simulation
+[16:42:11.148029 DEBUG] [openstudio.workflow.OSWorkflow] Saved final IDF as C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/run/in.idf
+[16:42:11.148029 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlus - selected = true
+[16:42:11.148029 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Original Directory: C:/openstudioapplication-1.7.1/bin
+[16:42:11.148029 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing To run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/run
+[16:42:11.148029 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, szPath = 'C:\openstudioapplication-1.7.1\bin\openstudiolib.dll'
+[16:42:11.148029 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/bin/openstudiolib.dll
+[16:42:11.148029 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, found 'C:/openstudioapplication-1.7.1/bin/openstudiolib.dll'
+[16:42:11.156550 DEBUG] [ApplicationPathHelpers] Searching for EnergyPlus in 'C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe'
+[16:42:11.156550 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe
+[16:42:11.156550 DEBUG] [ApplicationPathHelpers] Found EnergyPlus at 'C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe'
+[16:42:11.156550 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe
+[16:42:11.163658 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] EnergyPlus executable path is C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe
+[16:42:11.163658 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] ExpandObjects executable path is C:/openstudioapplication-1.7.1/EnergyPlus/ExpandObjects.exe
+[16:42:11.163658 INFO] [openstudio.workflow.OSWorkflow] Starting simulation in run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/run
+[16:42:11.179292 INFO] [openstudio.workflow.OSWorkflow] Running command 'C:/openstudioapplication-1.7.1\EnergyPlus\ExpandObjects.exe'
+[16:42:11.285058 INFO] [openstudio.workflow.OSWorkflow] Running command '"C:/openstudioapplication-1.7.1\EnergyPlus\energyplus.exe" in.idf'
+[16:42:20.083853 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus returned '0'
+[16:42:20.149887 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus finished with 42 warnings and 0 severe errors
+[16:42:20.149887 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] Removing any copied EnergyPlus files
+[16:42:20.149887 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing Current Directory back to: C:/openstudioapplication-1.7.1/bin
+[16:42:20.149887 DEBUG] [openstudio.workflow.OSWorkflow] ReportingMeasures - selected = true
+[16:42:20.149887 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute Reporting Measures.
+[16:42:20.149887 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[16:42:20.149887 INFO] [openstudio.workflow.OSWorkflow] Finished applying Reporting Measures.
+[16:42:20.149887 DEBUG] [openstudio.workflow.OSWorkflow] PostProcess - selected = true
+[16:42:20.149887 INFO] [openstudio.workflow.OSWorkflow] Gathering reports
+[16:42:20.162406 INFO] [openstudio.workflow.Util] Run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/run
+[16:42:20.162406 INFO] [openstudio.workflow.Util] Reports directoryC:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources
+[16:42:20.162406 INFO] [openstudio.workflow.Util] Saving EnergyPlus HTML report to C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/reports/eplustbl.html
+[16:42:20.162406 INFO] [openstudio.workflow.Util] Removing empty directory C:/Users/gbv/AppData/Local/Temp/osmodel-066d-d94c-eb56-d19a-1717710608-0/resources/run/000_AddOutputVariable
+[16:42:20.162406 INFO] [openstudio.workflow.OSWorkflow] Finished gathering reports
+[16:42:20.162406 DEBUG] [openstudio.workflow.OSWorkflow] Cleanup - selected = true
+[16:42:20.162406 INFO] [openstudio.workflow.OSWorkflow] Beginning cleanup of the run directory
+[16:42:20.162406 INFO] [openstudio.workflow.OSWorkflow] Finished cleanup of the run directory
+[16:42:22.057862 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD

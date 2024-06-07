@@ -1,0 +1,49 @@
+Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.06 06:57,
+   ** Warning ** CheckEnvironmentSpecifications: SimulationControl specified doing design day simulations, but no design environments specified.
+   **   ~~~   ** ...No design environment results produced. For these results, add appropriate SizingPeriod:* objects for your simulation.
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=ZACATEPEC
+   **   ~~~   ** ..Weather File Location=Zacatepec MOR MEX SRC-TMYx WMO#=767270
+   **   ~~~   ** ..due to location differences, Latitude difference=[21.07] degrees, Longitude difference=[138.93] degrees.
+   **   ~~~   ** ..Time Zone difference=[0.0] hour(s), Elevation difference=[0.00] percent, [0.00] meters.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 48", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 70", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 30", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 36", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 99", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 76", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 86", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 53", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 55", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 57", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 14", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 16", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 18", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 20", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 3", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   ** Severe  ** FenestrationSurface:Detailed="FACE 6", invalid blank Outside Boundary Condition Object
+   **   ~~~   ** ...when Base surface uses "Surface" as Outside Boundary Condition Object, subsurfaces must also specify specific surfaces in the adjacent zone.
+   **  Fatal  ** GetSurfaceData: Errors discovered, program terminates.
+   ...Summary of Errors that led to program termination:
+   ..... Reference severe error count=16
+   ..... Last severe error=FenestrationSurface:Detailed="FACE 6", invalid blank Outside Boundary Condition Object
+   ************* Warning:  Node connection errors not checked - most system input has not been read (see previous warning).
+   ************* Fatal error -- final processing.  Program exited before simulations began.  See previous error messages.
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Terminated--Fatal Error Detected. 2 Warning; 16 Severe Errors; Elapsed Time=00hr 00min  0.12sec
