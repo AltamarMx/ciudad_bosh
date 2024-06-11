@@ -1,29 +1,28 @@
 Setting Log Level to Debug (-2)
 [openstudio.XMLValidator] <-1> Treating schema as a regular XSD
 [openstudio.XMLValidator] <-1> Treating schema as a regular XSD
-[openstudio.workflow.OSWorkflow] <Debug> Removing existing run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/run
+[openstudio.workflow.OSWorkflow] <Debug> Removing existing run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/run
 [openstudio.workflow.OSWorkflow] <Debug> Registering that the workflow has started with the adapter
 [openstudio.workflow.OSWorkflow] <Debug> Initialization - selected = true
 [38;2;000;128;000m
 ┌────────────────────────────────────────────────────────────────────────────────┐
 │                         Starting State Initialization                          │
 └────────────────────────────────────────────────────────────────────────────────┘[0m
-[openstudio.workflow.OSWorkflow] <Debug> The root_dir for the datapoint is C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources
-[openstudio.workflow.OSWorkflow] <Debug> Removing existing generated files directory: C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/generated_files
-[openstudio.workflow.OSWorkflow] <Debug> Creating generated files directory: C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/generated_files
+[openstudio.workflow.OSWorkflow] <Debug> The root_dir for the datapoint is C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources
+[openstudio.workflow.OSWorkflow] <Debug> Creating generated files directory: C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/generated_files
 [openstudio.workflow.OSWorkflow] <Debug> Finding and loading the seed file
 [openstudio.worklow.Util] <Info> Loading OSM model
-[openstudio.worklow.Util] <Info> Reading in OSM model C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/009_condiciones_adiabaticas.osm
+[openstudio.worklow.Util] <Info> Reading in OSM model C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/009_condiciones_adiabaticas.osm
 [openstudio.osversion.VersionTranslator] <Debug> Starting translation from Version 3.7.0.
-[openstudio.osversion.VersionTranslator] <Debug> Initial model has 278 objects.
-[openstudio.osversion.VersionTranslator] <Debug> Final model has 278 objects in IDF form.
+[openstudio.osversion.VersionTranslator] <Debug> Initial model has 287 objects.
+[openstudio.osversion.VersionTranslator] <Debug> Final model has 287 objects in IDF form.
 [utilities.idf.Workspace] <Debug> Workspace::isValid called.
-[openstudio.osversion.VersionTranslator] <Debug> Final model has 278 objects in Model form.
+[openstudio.osversion.VersionTranslator] <Debug> Final model has 287 objects in Model form.
 [openstudio.workflow.OSWorkflow] <Debug> Initialize the weather file from osw
 [openstudio.workflow.OSWorkflow] <Debug> Search for weather file defined by osw MEX_MOR_Zacatepec.767270_TMYx.epw
-[openstudio.EpwFile] <Warn> Appears there are no design condition fields in the EPW file 'C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw'
+[openstudio.EpwFile] <Warn> Appears there are no design condition fields in the EPW file 'C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw'
 [openstudio.EpwFile] <Debug> No Daylightings Saving start Date
-[openstudio.EpwFile] <Warn> Successive data points (2018-Jan-31 to 2020-Feb-01, ending on line 753) are greater than 1 day apart in EPW file 'C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw'. Data will be treated as typical (TMY)
+[openstudio.EpwFile] <Warn> Successive data points (2018-Jan-31 to 2020-Feb-01, ending on line 753) are greater than 1 day apart in EPW file 'C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw'. Data will be treated as typical (TMY)
 [openstudio.XMLValidator] <Info> Treating schema as a regular XSD
 [openstudio.XMLValidator] <Info> Treating schema as a regular XSD
 [38;2;000;128;000m#######################Returned from State Initialization#######################[0m
@@ -36,12 +35,12 @@ Setting Log Level to Debug (-2)
 [openstudio.workflow.OSWorkflow] <Debug> Finding measures of type ModelMeasure
 [openstudio.workflow.OSWorkflow] <Debug> Running step 0
 [openstudio.workflow.OSWorkflow] <Debug> Find model's weather file and update LastEpwFilePath
-[openstudio.workflow.OSWorkflow] <Debug> Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw
-[openstudio.workflow.OSWorkflow] <Debug> Creating run directory for measure in 'C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/run/000_SurfaceMatching'
+[openstudio.workflow.OSWorkflow] <Debug> Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw
+[openstudio.workflow.OSWorkflow] <Debug> Creating run directory for measure in 'C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/run/000_SurfaceMatching'
 [openstudio.XMLValidator] <Info> Treating schema as a regular XSD
-[openstudio.workflow.OSWorkflow] <Debug> Found SurfaceMatching at primaryScriptPath: 'C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/measures/SurfaceMatching/measure.rb'
+[openstudio.workflow.OSWorkflow] <Debug> Found SurfaceMatching at primaryScriptPath: 'C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/measures/SurfaceMatching/measure.rb'
 [openstudio.workflow.OSWorkflow] <Debug> Class Name: SurfaceMatching
-[openstudio.workflow.OSWorkflow] <Debug> Measure Script Path: C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/measures/SurfaceMatching/measure.rb
+[openstudio.workflow.OSWorkflow] <Debug> Measure Script Path: C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/measures/SurfaceMatching/measure.rb
 [openstudio.workflow.OSWorkflow] <Debug> Measure Type: ModelMeasure
 [openstudio.workflow.OSWorkflow] <Debug> Measure Language: Ruby
 [ApplicationPathHelpers] <Debug> getOpenStudioModule, szPath = 'C:\openstudioapplication-1.7.1\bin\openstudiolib.dll'
@@ -56,7 +55,7 @@ Setting Log Level to Debug (-2)
 [openstudio.measure.OSRunner] <Info> The final model has 44 matched surfaces.
 [openstudio.workflow.OSWorkflow] <Debug> Step Result: Success
 [openstudio.workflow.OSWorkflow] <Debug> Find model's weather file and update LastEpwFilePath
-[openstudio.workflow.OSWorkflow] <Debug> Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw
+[openstudio.workflow.OSWorkflow] <Debug> Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw
 [openstudio.workflow.OSWorkflow] <Info> Finished applying OpenStudio Measures.
 [38;2;000;128;000m#####################Returned from State OpenStudioMeasures#####################[0m
 [openstudio.workflow.OSWorkflow] <Debug> Translator - selected = true
@@ -87,8 +86,6 @@ Setting Log Level to Debug (-2)
 [openstudio.energyplus.ForwardTranslator] <Error> Could not resolve matched surface construction conflicts between surfaces 'Face 102', and 'Face 94'
 [openstudio.energyplus.ForwardTranslator] <Warn> Both surfaces 'Face 37', and 'Face 4' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
 [openstudio.energyplus.ForwardTranslator] <Warn> Both surfaces 'Face 98', and 'Face 2' reference the same construction 'ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4' but it is not symmetric, creating a reversed copy.
-[openstudio.energyplus.ForwardTranslator] <Warn> Space E_Escaleras2 is not associated with a ThermalZone, it will not be translated.
-[openstudio.energyplus.ForwardTranslator] <Warn> Surface 'Face 94' has blank Outside Boundary Condition Object.  Changing Outside Boundary Condition from 'Surface' to 'Adiabatic'
 [utilities.idf.WorkspaceObject] <Warn> Object of type 'Schedule:Constant' and named 'Always On Discrete', points to an object named OnOff from field 1, but that object cannot be located.
 [utilities.idf.WorkspaceObject] <Warn> Object of type 'Schedule:Constant' and named 'Always Off Discrete', points to an object named OnOff 1 from field 1, but that object cannot be located.
 [utilities.idf.WorkspaceObject] <Warn> Object of type 'Schedule:Constant' and named 'Always On Continuous', points to an object named Fractional from field 1, but that object cannot be located.
@@ -112,12 +109,12 @@ Setting Log Level to Debug (-2)
 [openstudio.workflow.OSWorkflow] <Debug> Finding measures of type ReportingMeasure
 [openstudio.workflow.OSWorkflow] <Debug> Running step 1
 [openstudio.workflow.OSWorkflow] <Debug> Find model's weather file and update LastEpwFilePath
-[openstudio.workflow.OSWorkflow] <Debug> Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw
-[openstudio.workflow.OSWorkflow] <Debug> Creating run directory for measure in 'C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/run/001_OpenStudioResults'
+[openstudio.workflow.OSWorkflow] <Debug> Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/files/MEX_MOR_Zacatepec.767270_TMYx.epw
+[openstudio.workflow.OSWorkflow] <Debug> Creating run directory for measure in 'C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/run/001_OpenStudioResults'
 [openstudio.XMLValidator] <Info> Treating schema as a regular XSD
-[openstudio.workflow.OSWorkflow] <Debug> Found OpenStudioResults at primaryScriptPath: 'C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/measures/OpenStudioResults/measure.rb'
+[openstudio.workflow.OSWorkflow] <Debug> Found OpenStudioResults at primaryScriptPath: 'C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/measures/OpenStudioResults/measure.rb'
 [openstudio.workflow.OSWorkflow] <Debug> Class Name: OpenStudioResults
-[openstudio.workflow.OSWorkflow] <Debug> Measure Script Path: C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/measures/OpenStudioResults/measure.rb
+[openstudio.workflow.OSWorkflow] <Debug> Measure Script Path: C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/measures/OpenStudioResults/measure.rb
 [openstudio.workflow.OSWorkflow] <Debug> Measure Type: ReportingMeasure
 [openstudio.workflow.OSWorkflow] <Debug> Measure Language: Ruby
 [openstudio.workflow.OSWorkflow] <Debug> measure->name()= 'OpenStudio Results'
@@ -210,7 +207,7 @@ Setting Log Level to Debug (-2)
 [openstudio.workflow.OSWorkflow] <Info> Finished collecting output requests from Reporting measures.
 [openstudio.workflow.OSWorkflow] <Info> Running EnergyPlus Preprocess
 [openstudio.workflow.OSWorkflow] <Info> Finished preprocess job for EnergyPlus simulation
-[openstudio.workflow.OSWorkflow] <Debug> Saved final IDF as C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/run/in.idf
+[openstudio.workflow.OSWorkflow] <Debug> Saved final IDF as C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/run/in.idf
 [38;2;000;128;000m#########################Returned from State PreProcess#########################[0m
 [openstudio.workflow.OSWorkflow] <Debug> EnergyPlus - selected = true
 [38;2;000;128;000m
@@ -218,7 +215,7 @@ Setting Log Level to Debug (-2)
 │                           Starting State EnergyPlus                            │
 └────────────────────────────────────────────────────────────────────────────────┘[0m
 [openstudio.OSWorkflow.prepareEnergyPlusDir] <Debug> Original Directory: C:/openstudioapplication-1.7.1/bin
-[openstudio.OSWorkflow.prepareEnergyPlusDir] <Debug> Changing To run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/run
+[openstudio.OSWorkflow.prepareEnergyPlusDir] <Debug> Changing To run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/run
 [ApplicationPathHelpers] <Debug> getOpenStudioModule, szPath = 'C:\openstudioapplication-1.7.1\bin\openstudiolib.dll'
 [PathHelpers] <Debug> completeAndNormalize: result = C:/openstudioapplication-1.7.1/bin/openstudiolib.dll
 [ApplicationPathHelpers] <Debug> getOpenStudioModule, found 'C:/openstudioapplication-1.7.1/bin/openstudiolib.dll'
@@ -228,14 +225,14 @@ Setting Log Level to Debug (-2)
 [PathHelpers] <Debug> completeAndNormalize: result = C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe
 [openstudio.OSWorkflow.prepareEnergyPlusDir] <Info> EnergyPlus executable path is C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe
 [openstudio.OSWorkflow.prepareEnergyPlusDir] <Info> ExpandObjects executable path is C:/openstudioapplication-1.7.1/EnergyPlus/ExpandObjects.exe
-[openstudio.workflow.OSWorkflow] <Info> Starting simulation in run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-c2d9-6f2a-b694-4886-1717677871-0/resources/run
+[openstudio.workflow.OSWorkflow] <Info> Starting simulation in run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-a8c5-cd3c-b43c-f44a-1718053870-0/resources/run
 [openstudio.workflow.OSWorkflow] <Info> Running command 'C:/openstudioapplication-1.7.1\EnergyPlus\ExpandObjects.exe'
 ExpandObjects Started.
 No expanded file generated.
-ExpandObjects Finished. Time:     0.016
+ExpandObjects Finished. Time:     0.062
 [openstudio.workflow.OSWorkflow] <Info> Running command '"C:/openstudioapplication-1.7.1\EnergyPlus\energyplus.exe" in.idf'
 EnergyPlus Starting
-EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.06 06:57
+EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.10 15:12
 Adjusting Air System Sizing
 Adjusting Standard 62.1 Ventilation Sizing
 Initializing Simulation

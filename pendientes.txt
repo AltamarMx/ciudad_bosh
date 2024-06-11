@@ -1,0 +1,15 @@
+
+- Mediciones de los espacios
+- Definir materiales de sistemas constructivos
+- Definir cargas térmicas:
+	- # personas y su met 
+	- horarios y el espacio en el que estan
+	- cargas por luces, horarios y potencias
+	- electrodésticos, uso y potencias
+- Infiltración (ach constantes o AFN) 
+- Reunir y generar EPW
+- Afinar altura del departamento (IDF), altura del departamento
+- AA ?
+
+
+Tiempo con menor ocupacion para hacer una validación.

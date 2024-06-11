@@ -1,0 +1,563 @@
+[18:00:29.178844 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run
+[18:00:29.178844 DEBUG] [openstudio.workflow.OSWorkflow] Registering that the workflow has started with the adapter
+[18:00:29.180119 DEBUG] [openstudio.workflow.OSWorkflow] Initialization - selected = true
+[18:00:29.180687 DEBUG] [openstudio.workflow.OSWorkflow] The root_dir for the datapoint is C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources
+[18:00:29.181684 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing generated files directory: C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/generated_files
+[18:00:29.181684 DEBUG] [openstudio.workflow.OSWorkflow] Creating generated files directory: C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/generated_files
+[18:00:29.183681 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing reports directory: C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/reports
+[18:00:29.185752 DEBUG] [openstudio.workflow.OSWorkflow] Finding and loading the seed file
+[18:00:29.196276 INFO] [openstudio.worklow.Util] Loading OSM model
+[18:00:29.196276 INFO] [openstudio.worklow.Util] Reading in OSM model C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/011_sc_definidos.osm
+[18:00:29.223898 DEBUG] [openstudio.osversion.VersionTranslator] Starting translation from Version 3.7.0.
+[18:00:29.266146 DEBUG] [openstudio.osversion.VersionTranslator] Initial model has 330 objects.
+[18:00:29.266146 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 330 objects in IDF form.
+[18:00:29.285941 DEBUG] [utilities.idf.Workspace] Workspace::isValid called.
+[18:00:29.346313 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 330 objects in Model form.
+[18:00:29.351319 DEBUG] [openstudio.workflow.OSWorkflow] Initialize the weather file from osw
+[18:00:29.351319 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file defined by osw DOM_NC_Santo.Domingo.784860_TMYx.2007-2021.epw
+[18:00:29.370885 DEBUG] [openstudio.EpwFile] No Daylightings Saving start Date
+[18:00:29.376413 WARN] [openstudio.EpwFile] Successive data points (2013-Jan-31 to 2014-Feb-01, ending on line 753) are greater than 1 day apart in EPW file 'C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/files/DOM_NC_Santo.Domingo.784860_TMYx.2007-2021.epw'. Data will be treated as typical (TMY)
+[18:00:29.456990 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:00:29.476074 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:00:29.502573 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:00:29.531146 DEBUG] [openstudio.workflow.OSWorkflow] OpenStudioMeasures - selected = true
+[18:00:29.531146 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute OpenStudio Measures
+[18:00:29.531146 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ModelMeasure
+[18:00:29.531146 DEBUG] [openstudio.workflow.OSWorkflow] Running step 0
+[18:00:29.531146 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[18:00:29.531146 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/files/DOM_NC_Santo.Domingo.784860_TMYx.2007-2021.epw
+[18:00:29.534325 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in 'C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run/000_AddOutputVariable'
+[18:00:29.542812 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:00:29.570941 DEBUG] [openstudio.workflow.OSWorkflow] Found AddOutputVariable at primaryScriptPath: 'C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/measures/AddOutputVariable/measure.rb'
+[18:00:29.570941 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AddOutputVariable
+[18:00:29.572040 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/measures/AddOutputVariable/measure.rb
+[18:00:29.572040 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[18:00:29.572040 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[18:00:29.572040 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, szPath = 'C:\openstudioapplication-1.7.1\bin\openstudiolib.dll'
+[18:00:29.574035 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/bin/openstudiolib.dll
+[18:00:29.574293 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, found 'C:/openstudioapplication-1.7.1/bin/openstudiolib.dll'
+[18:00:31.226468 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Add Output Variable'
+[18:00:31.226468 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 2 arguments
+[18:00:31.236140 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'reporting_frequency' to 'timestep'
+[18:00:31.236140 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'variable_name' to 'Zone Mean Air Temperature'
+[18:00:31.236140 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"key_value": "*", "reporting_frequency": "timestep", "variable_name": "Zone Mean Air Temperature"}
+[18:00:31.238746 INFO] [openstudio.measure.OSRunner] The model started with 0 output variable objects.
+[18:00:31.241158 INFO] [openstudio.measure.OSRunner] Adding output variable for Zone Mean Air Temperature reporting timestep.
+[18:00:31.241158 INFO] [openstudio.measure.OSRunner] Key value for variable is *.
+[18:00:31.241158 INFO] [openstudio.measure.OSRunner] The model finished with 1 output variable objects.
+[18:00:31.242225 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[18:00:31.242225 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[18:00:31.243226 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/files/DOM_NC_Santo.Domingo.784860_TMYx.2007-2021.epw
+[18:00:31.244154 DEBUG] [openstudio.workflow.OSWorkflow] Running step 1
+[18:00:31.244154 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[18:00:31.244154 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/files/DOM_NC_Santo.Domingo.784860_TMYx.2007-2021.epw
+[18:00:31.246358 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in 'C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run/001_AddOutputVariable'
+[18:00:31.254487 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:00:31.271639 DEBUG] [openstudio.workflow.OSWorkflow] Found AddOutputVariable at primaryScriptPath: 'C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/measures/AddOutputVariable/measure.rb'
+[18:00:31.271639 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: AddOutputVariable
+[18:00:31.271639 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/measures/AddOutputVariable/measure.rb
+[18:00:31.271639 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ModelMeasure
+[18:00:31.271639 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[18:00:31.277404 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'Add Output Variable'
+[18:00:31.277581 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 2 arguments
+[18:00:31.280126 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'reporting_frequency' to 'timestep'
+[18:00:31.280126 INFO] [openstudio.workflow.OSWorkflow] Setting argument value 'variable_name' to 'Site Outdoor Air Drybulb Temperature'
+[18:00:31.280126 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"key_value": "*", "reporting_frequency": "timestep", "variable_name": "Site Outdoor Air Drybulb Temperature"}
+[18:00:31.280126 INFO] [openstudio.measure.OSRunner] The model started with 1 output variable objects.
+[18:00:31.280126 INFO] [openstudio.measure.OSRunner] Adding output variable for Site Outdoor Air Drybulb Temperature reporting timestep.
+[18:00:31.280126 INFO] [openstudio.measure.OSRunner] Key value for variable is *.
+[18:00:31.280126 INFO] [openstudio.measure.OSRunner] The model finished with 2 output variable objects.
+[18:00:31.280126 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[18:00:31.280126 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[18:00:31.280126 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/files/DOM_NC_Santo.Domingo.784860_TMYx.2007-2021.epw
+[18:00:31.280126 INFO] [openstudio.workflow.OSWorkflow] Finished applying OpenStudio Measures.
+[18:00:31.336379 DEBUG] [openstudio.workflow.OSWorkflow] Translator - selected = true
+[18:00:31.341837 INFO] [openstudio.workflow.OSWorkflow] Beginning the translation to IDF
+[18:00:31.348420 INFO] [openstudio.energyplus.ForwardTranslator] Surface 'Face 102' has a construction and 'Face 94' does not, using 'Face 102''s construction.
+[18:00:31.431079 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always On Discrete', points to an object named OnOff from field 1, but that object cannot be located.
+[18:00:31.431079 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always Off Discrete', points to an object named OnOff 1 from field 1, but that object cannot be located.
+[18:00:31.431079 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always On Continuous', points to an object named Fractional from field 1, but that object cannot be located.
+[18:00:31.431079 INFO] [openstudio.workflow.OSWorkflow] Successfully translated to IDF
+[18:00:31.431079 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlusMeasures - selected = true
+[18:00:31.431079 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute EnergyPlus Measures.
+[18:00:31.436109 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type EnergyPlusMeasure
+[18:00:31.436109 INFO] [openstudio.workflow.OSWorkflow] Finished applying EnergyPlus Measures.
+[18:00:31.437109 DEBUG] [openstudio.workflow.OSWorkflow] PreProcess - selected = true
+[18:00:31.466359 INFO] [openstudio.workflow.OSWorkflow] Beginning to collect output requests from Reporting measures.
+[18:00:31.466359 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[18:00:31.467976 DEBUG] [openstudio.workflow.OSWorkflow] Running step 2
+[18:00:31.467976 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[18:00:31.467976 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/files/DOM_NC_Santo.Domingo.784860_TMYx.2007-2021.epw
+[18:00:31.470135 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in 'C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run/002_OpenStudioResults'
+[18:00:31.479351 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:00:31.511273 DEBUG] [openstudio.workflow.OSWorkflow] Found OpenStudioResults at primaryScriptPath: 'C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/measures/OpenStudioResults/measure.rb'
+[18:00:31.511273 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: OpenStudioResults
+[18:00:31.511273 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/measures/OpenStudioResults/measure.rb
+[18:00:31.511273 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ReportingMeasure
+[18:00:31.511273 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[18:00:47.102776 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'OpenStudio Results'
+[18:00:47.102776 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 0 arguments
+[18:00:47.105897 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[18:00:47.105897 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[18:00:47.108983 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[18:00:47.120241 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[18:00:47.120241 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[18:00:47.121239 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[18:00:47.121239 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[18:00:47.125226 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[18:00:47.152645 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[18:00:47.153245 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[18:00:47.153615 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[18:00:47.221496 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[18:00:47.222494 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[18:00:47.539950 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[18:00:47.543916 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[18:00:47.560794 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[18:00:47.562784 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[18:00:47.622750 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[18:00:47.626737 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[18:00:47.627734 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[18:00:47.627734 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[18:00:47.629729 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[18:00:47.629729 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[18:00:47.629729 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[18:00:47.643438 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[18:00:47.644434 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[18:00:47.645726 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[18:00:47.646429 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[18:00:47.647425 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[18:00:47.651750 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[18:00:47.653781 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[18:00:47.654778 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[18:00:47.655079 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[18:00:47.656175 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[18:00:47.656346 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[18:00:47.658326 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[18:00:47.692161 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[18:00:47.694399 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[18:00:47.694399 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[18:00:47.694399 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[18:00:47.694399 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[18:00:47.698146 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"air_loops_detail_section": "true", "annual_overview_section": "true", "building_summary_section": "true", "cost_summary_section": "true", "envelope_section_section": "true", "exterior_light_section": "true", "hvac_load_profile": "true", "interior_lighting_section": "true", "measure_warning_section": "true", "monthly_overview_section": "true", "outdoor_air_section": "true", "plant_loops_detail_section": "true", "plug_loads_section": "true", "reg_monthly_details": "false", "schedules_overview_section": "true", "source_energy_section": "true", "space_type_breakdown_section": "true", "space_type_details_section": "true", "units": "IP", "utility_bills_rates_section": "true", "water_use_section": "true", "zone_condition_section": "true", "zone_equipment_detail_section": "true", "zone_summary_section": "true"}
+[18:00:47.698146 DEBUG] [openstudio.workflow.OSWorkflow] Calling measure.energyPlusOutputRequests for 'OpenStudioResults'
+[18:00:47.699144 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[18:00:47.699475 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[18:00:47.699619 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[18:00:47.711247 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[18:00:47.711247 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[18:00:47.712550 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[18:00:47.713551 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[18:00:47.720922 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[18:00:47.745854 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[18:00:47.746852 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[18:00:47.747850 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[18:00:47.820951 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[18:00:47.820951 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[18:00:48.105019 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[18:00:48.119374 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[18:00:48.124129 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[18:00:48.124129 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[18:00:48.145751 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[18:00:48.148721 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[18:00:48.149716 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[18:00:48.150714 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[18:00:48.152710 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[18:00:48.152710 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[18:00:48.153706 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[18:00:48.190929 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[18:00:48.191928 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[18:00:48.191928 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[18:00:48.191928 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[18:00:48.192925 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[18:00:48.195917 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[18:00:48.197913 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[18:00:48.199434 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[18:00:48.199905 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[18:00:48.200537 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[18:00:48.201615 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[18:00:48.204561 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[18:00:48.240094 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[18:00:48.242066 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[18:00:48.242066 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[18:00:48.243064 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[18:00:48.243278 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[18:00:48.247051 DEBUG] [openstudio.workflow.OSWorkflow] Finished measure.energyPlusOutputRequests for 'OpenStudioResults', 11 output requests added
+[18:00:48.248047 INFO] [openstudio.workflow.OSWorkflow] Finished collecting output requests from Reporting measures.
+[18:00:48.248047 INFO] [openstudio.workflow.OSWorkflow] Running EnergyPlus Preprocess
+[18:00:48.253035 INFO] [openstudio.workflow.OSWorkflow] Finished preprocess job for EnergyPlus simulation
+[18:00:48.287533 DEBUG] [openstudio.workflow.OSWorkflow] Saved final IDF as C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run/in.idf
+[18:00:48.288365 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlus - selected = true
+[18:00:48.289528 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Original Directory: C:/openstudioapplication-1.7.1/bin
+[18:00:48.289528 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing To run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run
+[18:00:48.290524 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, szPath = 'C:\openstudioapplication-1.7.1\bin\openstudiolib.dll'
+[18:00:48.291523 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/bin/openstudiolib.dll
+[18:00:48.292838 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, found 'C:/openstudioapplication-1.7.1/bin/openstudiolib.dll'
+[18:00:48.293515 DEBUG] [ApplicationPathHelpers] Searching for EnergyPlus in 'C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe'
+[18:00:48.294830 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe
+[18:00:48.294830 DEBUG] [ApplicationPathHelpers] Found EnergyPlus at 'C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe'
+[18:00:48.295510 DEBUG] [PathHelpers] completeAndNormalize: result = C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe
+[18:00:48.310751 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] EnergyPlus executable path is C:/openstudioapplication-1.7.1/EnergyPlus/energyplus.exe
+[18:00:48.311257 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] ExpandObjects executable path is C:/openstudioapplication-1.7.1/EnergyPlus/ExpandObjects.exe
+[18:00:48.311257 INFO] [openstudio.workflow.OSWorkflow] Starting simulation in run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run
+[18:00:48.337178 INFO] [openstudio.workflow.OSWorkflow] Running command 'C:/openstudioapplication-1.7.1\EnergyPlus\ExpandObjects.exe'
+[18:00:48.442613 INFO] [openstudio.workflow.OSWorkflow] Running command '"C:/openstudioapplication-1.7.1\EnergyPlus\energyplus.exe" in.idf'
+[18:01:07.753672 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus returned '0'
+[18:01:07.787798 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus finished with 40 warnings and 0 severe errors
+[18:01:07.788213 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] Removing any copied EnergyPlus files
+[18:01:07.790965 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing Current Directory back to: C:/openstudioapplication-1.7.1/bin
+[18:01:07.791820 DEBUG] [openstudio.workflow.OSWorkflow] ReportingMeasures - selected = true
+[18:01:07.793815 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute Reporting Measures.
+[18:01:07.793815 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[18:01:07.794813 DEBUG] [openstudio.workflow.OSWorkflow] Running step 2
+[18:01:07.800323 DEBUG] [openstudio.workflow.OSWorkflow] Find model's weather file and update LastEpwFilePath
+[18:01:07.800323 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/files/DOM_NC_Santo.Domingo.784860_TMYx.2007-2021.epw
+[18:01:07.803058 DEBUG] [openstudio.workflow.OSWorkflow] Creating run directory for measure in 'C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run/002_OpenStudioResults'
+[18:01:07.812058 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:01:07.868906 DEBUG] [openstudio.workflow.OSWorkflow] Found OpenStudioResults at primaryScriptPath: 'C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/measures/OpenStudioResults/measure.rb'
+[18:01:07.868906 DEBUG] [openstudio.workflow.OSWorkflow] Class Name: OpenStudioResults
+[18:01:07.869235 DEBUG] [openstudio.workflow.OSWorkflow] Measure Script Path: C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/measures/OpenStudioResults/measure.rb
+[18:01:07.869235 DEBUG] [openstudio.workflow.OSWorkflow] Measure Type: ReportingMeasure
+[18:01:07.869235 DEBUG] [openstudio.workflow.OSWorkflow] Measure Language: Ruby
+[18:01:08.018778 DEBUG] [openstudio.workflow.OSWorkflow] measure->name()= 'OpenStudio Results'
+[18:01:08.019020 DEBUG] [openstudio.workflow.OSWorkflow] Current step has 0 arguments
+[18:01:08.024790 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[18:01:08.024790 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[18:01:08.024790 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[18:01:08.040810 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[18:01:08.041807 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[18:01:08.041807 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[18:01:08.041807 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[18:01:08.051854 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[18:01:08.100105 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[18:01:08.102934 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[18:01:08.105976 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[18:01:08.217903 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[18:01:08.217903 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[18:01:08.558148 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[18:01:08.559146 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[18:01:08.569742 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[18:01:08.571739 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[18:01:08.599940 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[18:01:08.605693 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[18:01:08.607224 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[18:01:08.608225 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[18:01:08.610220 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[18:01:08.611404 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[18:01:08.612621 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[18:01:08.635751 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[18:01:08.636748 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[18:01:08.637746 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[18:01:08.638744 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[18:01:08.639740 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[18:01:08.649155 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[18:01:08.656047 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[18:01:08.657832 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[18:01:08.659465 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[18:01:08.659831 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[18:01:08.660937 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[18:01:08.666813 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[18:01:08.718985 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[18:01:08.721567 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[18:01:08.721977 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[18:01:08.721977 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[18:01:08.721977 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[18:01:08.728994 DEBUG] [openstudio.workflow.OSWorkflow] argumentMap={"air_loops_detail_section": "true", "annual_overview_section": "true", "building_summary_section": "true", "cost_summary_section": "true", "envelope_section_section": "true", "exterior_light_section": "true", "hvac_load_profile": "true", "interior_lighting_section": "true", "measure_warning_section": "true", "monthly_overview_section": "true", "outdoor_air_section": "true", "plant_loops_detail_section": "true", "plug_loads_section": "true", "reg_monthly_details": "false", "schedules_overview_section": "true", "source_energy_section": "true", "space_type_breakdown_section": "true", "space_type_details_section": "true", "units": "IP", "utility_bills_rates_section": "true", "water_use_section": "true", "zone_condition_section": "true", "zone_equipment_detail_section": "true", "zone_summary_section": "true"}
+[18:01:08.752042 DEBUG] [openstudio.energyplus.SqlFile] Dictionary Built
+[18:01:09.934262 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[18:01:09.935217 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[18:01:09.935217 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[18:01:09.944192 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[18:01:09.944192 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[18:01:09.945190 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[18:01:09.945190 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[18:01:09.950150 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[18:01:09.979099 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[18:01:09.980071 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[18:01:09.981069 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[18:01:10.062740 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[18:01:10.063738 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[18:01:10.476941 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[18:01:10.477939 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[18:01:10.493973 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[18:01:10.494970 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[18:01:10.512922 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[18:01:10.515916 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[18:01:10.516911 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[18:01:10.518426 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[18:01:10.520419 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[18:01:10.521414 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[18:01:10.521414 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[18:01:10.534379 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[18:01:10.535375 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[18:01:10.535375 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[18:01:10.535375 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[18:01:10.536372 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[18:01:10.539366 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[18:01:10.541360 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[18:01:10.542357 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[18:01:10.542357 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[18:01:10.542357 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[18:01:10.542357 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[18:01:10.545348 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[18:01:10.578260 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[18:01:10.580255 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[18:01:10.580255 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[18:01:10.580255 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[18:01:10.580255 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[18:01:10.583247 INFO] [openstudio.measure.OSRunner] Gathering data from EnergyPlus SQL file and OSM model. Will report in IP Units
+[18:01:10.745297 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:01:10.771679 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:01:10.791989 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:01:18.360241 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[18:01:18.360241 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[18:01:18.360241 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[18:01:18.367222 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[18:01:18.368218 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[18:01:18.368218 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[18:01:18.368218 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[18:01:18.373207 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[18:01:18.399137 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[18:01:18.399137 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[18:01:18.400135 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[18:01:18.465267 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[18:01:18.465267 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[18:01:18.825344 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[18:01:18.826343 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[18:01:18.834321 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[18:01:18.835318 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[18:01:18.854180 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[18:01:18.885098 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[18:01:18.887091 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[18:01:18.887091 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[18:01:18.892078 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[18:01:18.893076 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[18:01:18.893076 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[18:01:18.907038 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[18:01:18.908036 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[18:01:18.908036 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[18:01:18.908036 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[18:01:18.909033 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[18:01:18.915018 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[18:01:18.918781 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[18:01:18.919778 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[18:01:18.920774 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[18:01:18.921772 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[18:01:18.921772 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[18:01:18.926871 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[18:01:18.978057 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[18:01:18.980052 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[18:01:18.981049 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[18:01:18.981049 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[18:01:18.982048 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[18:01:19.020251 INFO] [openstudio.standards.standard] Using OpenStudio Standards version 0.5.0 with template 90.1-2013.
+[18:01:19.020251 INFO] [openstudio.standards.standard] Loading OpenStudio Standards data for 90.1-2013
+[18:01:19.020251 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1
+[18:01:19.027233 DEBUG] [openstudio.standards.standard] Adding hvac_inference from Any.hvac_inference.json
+[18:01:19.027233 DEBUG] [openstudio.standards.standard] Adding size_category from Any.size_category.json
+[18:01:19.028305 DEBUG] [openstudio.standards.standard] Adding climate_zone_sets from ashrae_90_1.climate_zone_sets.json
+[18:01:19.029227 DEBUG] [openstudio.standards.standard] Adding climate_zones from ashrae_90_1.climate_zones.json
+[18:01:19.034213 DEBUG] [openstudio.standards.standard] Adding constructions from ashrae_90_1.constructions.json
+[18:01:19.066779 DEBUG] [openstudio.standards.standard] Adding curves from ashrae_90_1.curves.json
+[18:01:19.069770 DEBUG] [openstudio.standards.standard] Adding entryways from ashrae_90_1.entryways.json
+[18:01:19.069770 DEBUG] [openstudio.standards.standard] Adding fans from ashrae_90_1.fans.json
+[18:01:19.168852 DEBUG] [openstudio.standards.standard] Adding materials from ashrae_90_1.materials.json
+[18:01:19.169849 DEBUG] [openstudio.standards.standard] Adding parking from ashrae_90_1.parking.json
+[18:01:19.558435 DEBUG] [openstudio.standards.standard] Adding schedules from ashrae_90_1.schedules.json
+[18:01:19.559434 DEBUG] [openstudio.standards.standard] Loading JSON files from OpenStudio CLI embedded directory :/ruby/2.7.0/gems/openstudio-standards-0.5.0/lib/openstudio-standards/standards/ashrae_90_1/ashrae_90_1_2013
+[18:01:19.565417 DEBUG] [openstudio.standards.standard] Adding boilers from ashrae_90_1_2013.boilers.json
+[18:01:19.567411 DEBUG] [openstudio.standards.standard] Adding chillers from ashrae_90_1_2013.chillers.json
+[18:01:19.593342 DEBUG] [openstudio.standards.standard] Adding construction_properties from ashrae_90_1_2013.construction_properties.json
+[18:01:19.595337 DEBUG] [openstudio.standards.standard] Adding construction_sets from ashrae_90_1_2013.construction_sets.json
+[18:01:19.597332 DEBUG] [openstudio.standards.standard] Adding economizers from ashrae_90_1_2013.economizers.json
+[18:01:19.598329 DEBUG] [openstudio.standards.standard] Adding elevators from ashrae_90_1_2013.elevators.json
+[18:01:19.600367 DEBUG] [openstudio.standards.standard] Adding energy_recovery from ashrae_90_1_2013.energy_recovery.json
+[18:01:19.601321 DEBUG] [openstudio.standards.standard] Adding exterior_lighting from ashrae_90_1_2013.ext_ltg.json
+[18:01:19.601321 DEBUG] [openstudio.standards.standard] Adding furnaces from ashrae_90_1_2013.furnaces.json
+[18:01:19.615285 DEBUG] [openstudio.standards.standard] Adding ground_temperatures from ashrae_90_1_2013.ground_temperatures.json
+[18:01:19.617278 DEBUG] [openstudio.standards.standard] Adding heat_pumps from ashrae_90_1_2013.heat_pumps.json
+[18:01:19.618275 DEBUG] [openstudio.standards.standard] Adding heat_pumps_heating from ashrae_90_1_2013.heat_pumps_heating.json
+[18:01:19.618275 DEBUG] [openstudio.standards.standard] Adding heat_rejection from ashrae_90_1_2013.heat_rejection.json
+[18:01:19.618275 DEBUG] [openstudio.standards.standard] Adding motors from ashrae_90_1_2013.motors.json
+[18:01:19.623261 DEBUG] [openstudio.standards.standard] Adding prototype_inputs from ashrae_90_1_2013.prototype_inputs.json
+[18:01:19.624260 DEBUG] [openstudio.standards.standard] Adding refrigerated_cases from ashrae_90_1_2013.ref_cases.json
+[18:01:19.625257 DEBUG] [openstudio.standards.standard] Adding refrigeration_system_lineup from ashrae_90_1_2013.ref_lnup.json
+[18:01:19.625257 DEBUG] [openstudio.standards.standard] Adding refrigeration_compressors from ashrae_90_1_2013.refrigeration_compressors.json
+[18:01:19.626254 DEBUG] [openstudio.standards.standard] Adding refrigeration_condenser from ashrae_90_1_2013.refrigeration_condenser.json
+[18:01:19.626254 DEBUG] [openstudio.standards.standard] Adding refrigeration_system from ashrae_90_1_2013.refrigeration_system.json
+[18:01:19.628249 DEBUG] [openstudio.standards.standard] Adding refrigeration_walkins from ashrae_90_1_2013.refrigeration_walkins.json
+[18:01:19.661722 DEBUG] [openstudio.standards.standard] Adding space_types from ashrae_90_1_2013.spc_typ.json
+[18:01:19.663719 DEBUG] [openstudio.standards.standard] Adding unitary_acs from ashrae_90_1_2013.unitary_acs.json
+[18:01:19.664713 DEBUG] [openstudio.standards.standard] Adding water_heaters from ashrae_90_1_2013.water_heaters.json
+[18:01:19.664713 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps from ashrae_90_1_2013.water_source_heat_pumps.json
+[18:01:19.664713 DEBUG] [openstudio.standards.standard] Adding water_source_heat_pumps_heating from ashrae_90_1_2013.water_source_heat_pumps_heating.json
+[18:01:20.273947 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Monthly', timeSeriesName = 'Site Outdoor Air Drybulb Temperature', keyValue = 'Environment'
+[18:01:20.273947 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:20.273947 DEBUG] [openstudio.energyplus.SqlFile] Site Outdoor Air Drybulb Temperature
+[18:01:20.273947 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=8 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:20.274946 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:20.277937 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'BANIO'
+[18:01:20.277937 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:20.277937 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[18:01:20.279932 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=19 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:20.323815 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:20.406643 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'BANIO2'
+[18:01:20.406643 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:20.406643 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[18:01:20.407642 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=155 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:20.457027 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:20.546939 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'CLOSET'
+[18:01:20.547908 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:20.547908 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[18:01:20.548906 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=219 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:20.598929 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:20.685702 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'COCINA'
+[18:01:20.685702 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:20.685702 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[18:01:20.686700 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=283 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:20.741613 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:20.834432 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'ESCALERAS'
+[18:01:20.834432 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:20.834432 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[18:01:20.835399 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=347 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:20.886288 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:20.975129 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'ESCALERAS2'
+[18:01:20.975129 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:20.975129 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[18:01:20.975129 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=411 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:21.028039 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:21.124072 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'RECAMARA2'
+[18:01:21.124072 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:21.124072 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[18:01:21.124072 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=475 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:21.169952 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:21.255852 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'RECAMARA3'
+[18:01:21.255852 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:21.255852 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[18:01:21.256851 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=539 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:21.309416 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:21.397719 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'RPRINCIPAL'
+[18:01:21.397719 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:21.397719 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[18:01:21.398704 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=603 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:21.442619 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:21.531789 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Temperature', keyValue = 'SALACOMEDOR'
+[18:01:21.531789 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:21.531789 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Temperature
+[18:01:21.532788 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=667 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:21.583716 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:21.672958 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'BANIO'
+[18:01:21.672958 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:21.672958 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[18:01:21.673955 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=20 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:21.728790 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:21.788639 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'BANIO2'
+[18:01:21.788639 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:21.788639 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[18:01:21.789636 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=156 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:21.834538 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:21.897847 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'CLOSET'
+[18:01:21.897847 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:21.897847 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[18:01:21.898844 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=220 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:21.949760 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:22.024702 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'COCINA'
+[18:01:22.024702 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:22.024702 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[18:01:22.025701 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=284 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:22.073572 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:22.141416 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'ESCALERAS'
+[18:01:22.141416 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:22.141416 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[18:01:22.142415 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=348 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:22.190676 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:22.252309 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'ESCALERAS2'
+[18:01:22.252309 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:22.252309 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[18:01:22.252309 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=412 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:22.303825 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:22.370795 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'RECAMARA2'
+[18:01:22.370795 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:22.370795 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[18:01:22.371792 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=476 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:22.432338 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:22.490099 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'RECAMARA3'
+[18:01:22.490099 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:22.490099 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[18:01:22.490099 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=540 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:22.542030 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:22.599211 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'RPRINCIPAL'
+[18:01:22.599211 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:22.599211 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[18:01:22.600207 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=604 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:22.649193 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:22.721997 DEBUG] [openstudio.energyplus.SqlFile] Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Zone Air Relative Humidity', keyValue = 'SALACOMEDOR'
+[18:01:22.721997 DEBUG] [openstudio.energyplus.SqlFile] RUN PERIOD 1
+[18:01:22.721997 DEBUG] [openstudio.energyplus.SqlFile] Zone Air Relative Humidity
+[18:01:22.721997 DEBUG] [openstudio.energyplus.SqlFile] SQL Query:
+SELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportVariableData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportVariableDataDictionaryIndex=668 AND Time.EnvironmentPeriodIndex = 1Return Code:
+100
+[18:01:22.770990 DEBUG] [openstudio.energyplus.SqlFile] Time series found
+[18:01:23.670746 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:01:23.697012 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:01:23.722799 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:01:23.760364 DEBUG] [openstudio.WorkflowStepResult] WorkflowStepResult::warnings is deprecated, use stepWarnings instead
+[18:01:23.760364 DEBUG] [openstudio.WorkflowStepResult] WorkflowStepResult::warnings is deprecated, use stepWarnings instead
+[18:01:23.807704 INFO] [openstudio.measure.OSRunner] Generated report with 22 sections to ./report.html.
+[18:01:23.809694 DEBUG] [openstudio.workflow.OSWorkflow] Step Result: Success
+[18:01:23.809694 INFO] [openstudio.workflow.OSWorkflow] Finished applying Reporting Measures.
+[18:01:23.852956 DEBUG] [openstudio.workflow.OSWorkflow] PostProcess - selected = true
+[18:01:23.852956 INFO] [openstudio.workflow.OSWorkflow] Gathering reports
+[18:01:23.854951 INFO] [openstudio.workflow.Util] Run directory: C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run
+[18:01:23.855949 INFO] [openstudio.workflow.Util] Reports directoryC:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources
+[18:01:23.856436 INFO] [openstudio.workflow.Util] Saving EnergyPlus HTML report to C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/reports/eplustbl.html
+[18:01:23.870031 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:01:23.922214 INFO] [openstudio.workflow.Util] Saving report C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run/002_OpenStudioResults/report.html to C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/reports/openstudio_results_report.html
+[18:01:23.924210 INFO] [openstudio.workflow.Util] Removing empty directory C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run/000_AddOutputVariable
+[18:01:23.925208 INFO] [openstudio.workflow.Util] Removing empty directory C:/Users/gbv/AppData/Local/Temp/osmodel-f713-7e3c-4b55-b18a-1718061794-0/resources/run/001_AddOutputVariable
+[18:01:23.927862 INFO] [openstudio.workflow.OSWorkflow] Finished gathering reports
+[18:01:23.928024 DEBUG] [openstudio.workflow.OSWorkflow] Cleanup - selected = true
+[18:01:23.928024 INFO] [openstudio.workflow.OSWorkflow] Beginning cleanup of the run directory
+[18:01:23.931851 INFO] [openstudio.workflow.OSWorkflow] Finished cleanup of the run directory
+[18:01:29.376178 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:01:29.403540 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD
+[18:01:29.425086 INFO] [openstudio.XMLValidator] Treating schema as a regular XSD

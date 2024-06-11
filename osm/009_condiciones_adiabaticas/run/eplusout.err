@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.06 06:57,
+Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.10 15:12,
    ** Warning ** CheckEnvironmentSpecifications: SimulationControl specified doing design day simulations, but no design environments specified.
    **   ~~~   ** ...No design environment results produced. For these results, add appropriate SizingPeriod:* objects for your simulation.
    ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
@@ -46,4 +46,4 @@ Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.06 06:57,
    ************* Fatal error -- final processing.  Program exited before simulations began.  See previous error messages.
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Terminated--Fatal Error Detected. 2 Warning; 16 Severe Errors; Elapsed Time=00hr 00min  0.12sec
+   ************* EnergyPlus Terminated--Fatal Error Detected. 2 Warning; 16 Severe Errors; Elapsed Time=00hr 00min  0.26sec

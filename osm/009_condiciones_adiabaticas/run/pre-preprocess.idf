@@ -946,8 +946,8 @@ BuildingSurface:Detailed,
   ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 6, !- Construction Name
   Escaleras,                              !- Zone Name
   E_Escaleras,                            !- Space Name
-  Adiabatic,                              !- Outside Boundary Condition
-  ,                                       !- Outside Boundary Condition Object
+  Surface,                                !- Outside Boundary Condition
+  Face 102,                               !- Outside Boundary Condition Object
   NoSun,                                  !- Sun Exposure
   NoWind,                                 !- Wind Exposure
   ,                                       !- View Factor to Ground
@@ -1039,6 +1039,145 @@ FenestrationSurface:Detailed,
   0, 4.7, 0,                              !- X,Y,Z Vertex 2 {m}
   0, 5.4, 0,                              !- X,Y,Z Vertex 3 {m}
   0, 5.4, 2.1;                            !- X,Y,Z Vertex 4 {m}
+
+Zone,
+  Escaleras2,                             !- Name
+  ,                                       !- Direction of Relative North {deg}
+  0,                                      !- X Origin {m}
+  0,                                      !- Y Origin {m}
+  0,                                      !- Z Origin {m}
+  ,                                       !- Type
+  1,                                      !- Multiplier
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ,                                       !- Floor Area {m2}
+  ,                                       !- Zone Inside Convection Algorithm
+  ,                                       !- Zone Outside Convection Algorithm
+  Yes;                                    !- Part of Total Floor Area
+
+Space,
+  E_Escaleras2,                           !- Name
+  Escaleras2,                             !- Zone Name
+  ,                                       !- Ceiling Height {m}
+  ,                                       !- Volume {m3}
+  ;                                       !- Floor Area {m2}
+
+BuildingSurface:Detailed,
+  Face 102,                               !- Name
+  Floor,                                  !- Surface Type
+  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 5, !- Construction Name
+  Escaleras2,                             !- Zone Name
+  E_Escaleras2,                           !- Space Name
+  Surface,                                !- Outside Boundary Condition
+  Face 94,                                !- Outside Boundary Condition Object
+  NoSun,                                  !- Sun Exposure
+  NoWind,                                 !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  0, 5.6, 2.5,                            !- X,Y,Z Vertex 1 {m}
+  0, 0, 2.5,                              !- X,Y,Z Vertex 2 {m}
+  -2.5, 0, 2.5,                           !- X,Y,Z Vertex 3 {m}
+  -2.5, 5.6, 2.5;                         !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  Face 103,                               !- Name
+  Roof,                                   !- Surface Type
+  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 3, !- Construction Name
+  Escaleras2,                             !- Zone Name
+  E_Escaleras2,                           !- Space Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  0, 0, 5,                                !- X,Y,Z Vertex 1 {m}
+  0, 5.6, 5,                              !- X,Y,Z Vertex 2 {m}
+  -2.5, 5.6, 5,                           !- X,Y,Z Vertex 3 {m}
+  -2.5, 0, 5;                             !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  Face 104,                               !- Name
+  Wall,                                   !- Surface Type
+  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  Escaleras2,                             !- Zone Name
+  E_Escaleras2,                           !- Space Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -2.5, 0, 5,                             !- X,Y,Z Vertex 1 {m}
+  -2.5, 5.6, 5,                           !- X,Y,Z Vertex 2 {m}
+  -2.5, 5.6, 2.5,                         !- X,Y,Z Vertex 3 {m}
+  -2.5, 0, 2.5;                           !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  Face 105,                               !- Name
+  Wall,                                   !- Surface Type
+  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  Escaleras2,                             !- Zone Name
+  E_Escaleras2,                           !- Space Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  -2.5, 5.6, 5,                           !- X,Y,Z Vertex 1 {m}
+  0, 5.6, 5,                              !- X,Y,Z Vertex 2 {m}
+  0, 5.6, 2.5,                            !- X,Y,Z Vertex 3 {m}
+  -2.5, 5.6, 2.5;                         !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  Face 106,                               !- Name
+  Wall,                                   !- Surface Type
+  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  Escaleras2,                             !- Zone Name
+  E_Escaleras2,                           !- Space Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  0, 5.6, 5,                              !- X,Y,Z Vertex 1 {m}
+  0, 0, 5,                                !- X,Y,Z Vertex 2 {m}
+  0, 0, 2.5,                              !- X,Y,Z Vertex 3 {m}
+  0, 5.6, 2.5;                            !- X,Y,Z Vertex 4 {m}
+
+BuildingSurface:Detailed,
+  Face 107,                               !- Name
+  Wall,                                   !- Surface Type
+  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  Escaleras2,                             !- Zone Name
+  E_Escaleras2,                           !- Space Name
+  Outdoors,                               !- Outside Boundary Condition
+  ,                                       !- Outside Boundary Condition Object
+  SunExposed,                             !- Sun Exposure
+  WindExposed,                            !- Wind Exposure
+  ,                                       !- View Factor to Ground
+  ,                                       !- Number of Vertices
+  0, 0, 5,                                !- X,Y,Z Vertex 1 {m}
+  -2.5, 0, 5,                             !- X,Y,Z Vertex 2 {m}
+  -2.5, 0, 2.5,                           !- X,Y,Z Vertex 3 {m}
+  0, 0, 2.5;                              !- X,Y,Z Vertex 4 {m}
+
+FenestrationSurface:Detailed,
+  Face 108,                               !- Name
+  Window,                                 !- Surface Type
+  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Face 107,                               !- Building Surface Name
+  ,                                       !- Outside Boundary Condition Object
+  ,                                       !- View Factor to Ground
+  ,                                       !- Frame and Divider Name
+  ,                                       !- Multiplier
+  ,                                       !- Number of Vertices
+  -1.7, 0, 4.6,                           !- X,Y,Z Vertex 1 {m}
+  -1.7, 0, 3.5,                           !- X,Y,Z Vertex 2 {m}
+  -1.1, 0, 3.5,                           !- X,Y,Z Vertex 3 {m}
+  -1.1, 0, 4.6;                           !- X,Y,Z Vertex 4 {m}
 
 Zone,
   Recamara2,                              !- Name

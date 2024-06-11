@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.06 16:42,
+Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.10 15:59,
    ** Warning ** CheckEnvironmentSpecifications: SimulationControl specified doing design day simulations, but no design environments specified.
    **   ~~~   ** ...No design environment results produced. For these results, add appropriate SizingPeriod:* objects for your simulation.
    ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
@@ -6,14 +6,9 @@ Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.06 16:42,
    **   ~~~   ** ..Weather File Location=Zacatepec MOR MEX SRC-TMYx WMO#=767270
    **   ~~~   ** ..due to location differences, Latitude difference=[21.07] degrees, Longitude difference=[138.93] degrees.
    **   ~~~   ** ..Time Zone difference=[0.0] hour(s), Elevation difference=[0.00] percent, [0.00] meters.
-   ** Warning ** GetSurfaceData: Construction ASHRAE 189.1-2009 EXTROOF IEAD CLIMATEZONE 6 of interzone surface FACE 94 does not have the same materials in the reverse order as the construction ASHRAE 189.1-2009 EXTROOF IEAD CLIMATEZONE 5 of adjacent surface FACE 102
-   **   ~~~   ** or the properties of the reversed layers are not correct due to differing layer front and back side values
-   **   ~~~   ** ...but Nominal U values are similar, diff=[0.0000] ... simulation proceeds.
-   **   ~~~   ** ...if the two zones are expected to have significantly different temperatures, the proper "reverse" construction should be created.
-   **   ~~~   ** ...this problem for this pair will not be reported again.
    ** Warning ** GetSurfaceData: There are 25 coincident/collinear vertices; These have been deleted unless the deletion would bring the number of surface sides < 3.
    **   ~~~   ** For explicit details on each problem surface, use Output:Diagnostics,DisplayExtraWarnings;
-   ** Warning ** CheckUsedConstructions: There are 5 nominally unused constructions in input.
+   ** Warning ** CheckUsedConstructions: There are 14 nominally unused constructions in input.
    **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
    ** Warning ** Output:Meter: invalid Key Name="ELECTRICITY:FACILITY" - not found.
    ** Warning ** Output:Meter: invalid Key Name="NATURALGAS:FACILITY" - not found.
@@ -57,4 +52,4 @@ Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.06 16:42,
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 42 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  8.47sec
+   ************* EnergyPlus Completed Successfully-- 41 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 10.26sec

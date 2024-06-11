@@ -235,7 +235,7 @@ Space,
 BuildingSurface:Detailed,
   Face 42,                                !- Name
   Floor,                                  !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  Entrepiso,                              !- Construction Name
   Banio,                                  !- Zone Name
   E_Banio,                                !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -252,7 +252,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 43,                                !- Name
   Roof,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 3, !- Construction Name
+  Techo,                                  !- Construction Name
   Banio,                                  !- Zone Name
   E_Banio,                                !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -269,7 +269,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 44,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Banio,                                  !- Zone Name
   E_Banio,                                !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -286,7 +286,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 45,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   Banio,                                  !- Zone Name
   E_Banio,                                !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -303,7 +303,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 46,                                !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 45,                                !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -318,7 +318,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 47,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Banio,                                  !- Zone Name
   E_Banio,                                !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -335,7 +335,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 48,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 47,                                !- Building Surface Name
   Face 57,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -350,7 +350,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 49,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Banio,                                  !- Zone Name
   E_Banio,                                !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -389,7 +389,7 @@ Space,
 BuildingSurface:Detailed,
   Face 63,                                !- Name
   Floor,                                  !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  Entrepiso,                              !- Construction Name
   Banio2,                                 !- Zone Name
   E_Banio2,                               !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -407,7 +407,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 64,                                !- Name
   Roof,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 3, !- Construction Name
+  Techo,                                  !- Construction Name
   Banio2,                                 !- Zone Name
   E_Banio2,                               !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -425,7 +425,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 65,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   Banio2,                                 !- Zone Name
   E_Banio2,                               !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -442,7 +442,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 66,                                !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 65,                                !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -457,7 +457,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 67,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Banio2,                                 !- Zone Name
   E_Banio2,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -474,7 +474,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 68,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Banio2,                                 !- Zone Name
   E_Banio2,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -491,7 +491,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 69,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Banio2,                                 !- Zone Name
   E_Banio2,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -508,7 +508,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 70,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 69,                                !- Building Surface Name
   Face 16,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -523,7 +523,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 71,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Banio2,                                 !- Zone Name
   E_Banio2,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -562,7 +562,7 @@ Space,
 BuildingSurface:Detailed,
   Face 25,                                !- Name
   Floor,                                  !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  Entrepiso,                              !- Construction Name
   Closet,                                 !- Zone Name
   E_Closet,                               !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -580,7 +580,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 26,                                !- Name
   Roof,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 3, !- Construction Name
+  Techo,                                  !- Construction Name
   Closet,                                 !- Zone Name
   E_Closet,                               !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -598,7 +598,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 27,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Closet,                                 !- Zone Name
   E_Closet,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -615,7 +615,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 28,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Closet,                                 !- Zone Name
   E_Closet,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -632,7 +632,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 29,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Closet,                                 !- Zone Name
   E_Closet,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -649,7 +649,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 30,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 29,                                !- Building Surface Name
   Face 55,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -664,7 +664,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 31,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Closet,                                 !- Zone Name
   E_Closet,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -681,7 +681,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 32,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Closet,                                 !- Zone Name
   E_Closet,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -720,7 +720,7 @@ Space,
 BuildingSurface:Detailed,
   Face 33,                                !- Name
   Floor,                                  !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  Entrepiso,                              !- Construction Name
   Cocina,                                 !- Zone Name
   E_Cocina,                               !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -738,7 +738,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 34,                                !- Name
   Roof,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 3, !- Construction Name
+  Techo,                                  !- Construction Name
   Cocina,                                 !- Zone Name
   E_Cocina,                               !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -756,7 +756,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 35,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Cocina,                                 !- Zone Name
   E_Cocina,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -773,7 +773,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 36,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 35,                                !- Building Surface Name
   Face 6,                                 !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -788,7 +788,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 37,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Cocina,                                 !- Zone Name
   E_Cocina,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -805,7 +805,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 38,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Cocina,                                 !- Zone Name
   E_Cocina,                               !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -822,7 +822,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 39,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Cocina,                                 !- Zone Name
   E_Cocina,                               !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -839,7 +839,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 40,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   Cocina,                                 !- Zone Name
   E_Cocina,                               !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -856,7 +856,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 41,                                !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 40,                                !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -893,7 +893,7 @@ Space,
 BuildingSurface:Detailed,
   Face 100,                               !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   Escaleras,                              !- Zone Name
   E_Escaleras,                            !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -910,7 +910,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 101,                               !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 100,                               !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -925,7 +925,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 93,                                !- Name
   Floor,                                  !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  Entrepiso,                              !- Construction Name
   Escaleras,                              !- Zone Name
   E_Escaleras,                            !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -943,7 +943,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 94,                                !- Name
   Ceiling,                                !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 6, !- Construction Name
+  Entrepiso,                              !- Construction Name
   Escaleras,                              !- Zone Name
   E_Escaleras,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -960,7 +960,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 95,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Escaleras,                              !- Zone Name
   E_Escaleras,                            !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -977,7 +977,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 96,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Escaleras,                              !- Zone Name
   E_Escaleras,                            !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -994,7 +994,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 97,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Escaleras,                              !- Zone Name
   E_Escaleras,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1011,7 +1011,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 98,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Escaleras,                              !- Zone Name
   E_Escaleras,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1028,7 +1028,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 99,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 98,                                !- Building Surface Name
   Face 3,                                 !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1065,7 +1065,7 @@ Space,
 BuildingSurface:Detailed,
   Face 102,                               !- Name
   Floor,                                  !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 5, !- Construction Name
+  Entrepiso,                              !- Construction Name
   Escaleras2,                             !- Zone Name
   E_Escaleras2,                           !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1082,7 +1082,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 103,                               !- Name
   Roof,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 3, !- Construction Name
+  Techo,                                  !- Construction Name
   Escaleras2,                             !- Zone Name
   E_Escaleras2,                           !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1099,7 +1099,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 104,                               !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   Escaleras2,                             !- Zone Name
   E_Escaleras2,                           !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1116,7 +1116,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 105,                               !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   Escaleras2,                             !- Zone Name
   E_Escaleras2,                           !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1133,7 +1133,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 106,                               !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   Escaleras2,                             !- Zone Name
   E_Escaleras2,                           !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1150,7 +1150,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 107,                               !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   Escaleras2,                             !- Zone Name
   E_Escaleras2,                           !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1167,7 +1167,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 108,                               !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 107,                               !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1204,7 +1204,7 @@ Space,
 BuildingSurface:Detailed,
   Face 72,                                !- Name
   Floor,                                  !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  Entrepiso,                              !- Construction Name
   Recamara2,                              !- Zone Name
   E_Recamara2,                            !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -1222,7 +1222,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 73,                                !- Name
   Roof,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 3, !- Construction Name
+  Techo,                                  !- Construction Name
   Recamara2,                              !- Zone Name
   E_Recamara2,                            !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1240,7 +1240,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 74,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Recamara2,                              !- Zone Name
   E_Recamara2,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1257,7 +1257,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 75,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Recamara2,                              !- Zone Name
   E_Recamara2,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1274,7 +1274,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 76,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 75,                                !- Building Surface Name
   Face 20,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1289,7 +1289,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 77,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Recamara2,                              !- Zone Name
   E_Recamara2,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1306,7 +1306,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 78,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Recamara2,                              !- Zone Name
   E_Recamara2,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1323,7 +1323,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 79,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   Recamara2,                              !- Zone Name
   E_Recamara2,                            !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1340,7 +1340,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 80,                                !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 79,                                !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1377,7 +1377,7 @@ Space,
 BuildingSurface:Detailed,
   Face 81,                                !- Name
   Floor,                                  !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  Entrepiso,                              !- Construction Name
   Recamara3,                              !- Zone Name
   E_Recamara3,                            !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -1397,7 +1397,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 82,                                !- Name
   Roof,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 3, !- Construction Name
+  Techo,                                  !- Construction Name
   Recamara3,                              !- Zone Name
   E_Recamara3,                            !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1417,7 +1417,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 83,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Recamara3,                              !- Zone Name
   E_Recamara3,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1434,7 +1434,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 84,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Recamara3,                              !- Zone Name
   E_Recamara3,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1451,7 +1451,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 85,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Recamara3,                              !- Zone Name
   E_Recamara3,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1468,7 +1468,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 86,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 85,                                !- Building Surface Name
   Face 18,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1483,7 +1483,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 87,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Recamara3,                              !- Zone Name
   E_Recamara3,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1500,7 +1500,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 88,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   Recamara3,                              !- Zone Name
   E_Recamara3,                            !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1517,7 +1517,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 89,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   Recamara3,                              !- Zone Name
   E_Recamara3,                            !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1534,7 +1534,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 90,                                !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 89,                                !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1549,7 +1549,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 91,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   Recamara3,                              !- Zone Name
   E_Recamara3,                            !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1566,7 +1566,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 92,                                !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 91,                                !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1603,7 +1603,7 @@ Space,
 BuildingSurface:Detailed,
   Face 50,                                !- Name
   Floor,                                  !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  Entrepiso,                              !- Construction Name
   RPrincipal,                             !- Zone Name
   E_RPrincipal,                           !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -1622,7 +1622,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 51,                                !- Name
   Roof,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 3, !- Construction Name
+  Techo,                                  !- Construction Name
   RPrincipal,                             !- Zone Name
   E_RPrincipal,                           !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1641,7 +1641,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 52,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   RPrincipal,                             !- Zone Name
   E_RPrincipal,                           !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1658,7 +1658,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 53,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 52,                                !- Building Surface Name
   Face 14,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1673,7 +1673,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 54,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   RPrincipal,                             !- Zone Name
   E_RPrincipal,                           !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1690,7 +1690,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 55,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 54,                                !- Building Surface Name
   Face 30,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1705,7 +1705,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 56,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   RPrincipal,                             !- Zone Name
   E_RPrincipal,                           !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1722,7 +1722,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 57,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 56,                                !- Building Surface Name
   Face 48,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1737,7 +1737,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 58,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   RPrincipal,                             !- Zone Name
   E_RPrincipal,                           !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1754,7 +1754,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 59,                                !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 58,                                !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1769,7 +1769,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 60,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   RPrincipal,                             !- Zone Name
   E_RPrincipal,                           !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1786,7 +1786,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 61,                                !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 60,                                !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1801,7 +1801,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 62,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   RPrincipal,                             !- Zone Name
   E_RPrincipal,                           !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1840,7 +1840,7 @@ Space,
 BuildingSurface:Detailed,
   Face 0,                                 !- Name
   Floor,                                  !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 7-8, !- Construction Name
+  Entrepiso,                              !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Adiabatic,                              !- Outside Boundary Condition
@@ -1868,7 +1868,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 1,                                 !- Name
   Roof,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 3, !- Construction Name
+  Techo,                                  !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -1896,7 +1896,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 10,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1913,7 +1913,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 11,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1930,7 +1930,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 12,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1947,7 +1947,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 13,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1964,7 +1964,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 14,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 13,                                !- Building Surface Name
   Face 53,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -1979,7 +1979,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 15,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -1996,7 +1996,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 16,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 15,                                !- Building Surface Name
   Face 70,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2011,7 +2011,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 17,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -2028,7 +2028,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 18,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 17,                                !- Building Surface Name
   Face 86,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2043,7 +2043,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 19,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -2060,7 +2060,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 20,                                !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 19,                                !- Building Surface Name
   Face 76,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2075,7 +2075,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 2,                                 !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -2092,7 +2092,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 3,                                 !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 2,                                 !- Building Surface Name
   Face 99,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2107,7 +2107,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 21,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -2124,7 +2124,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 22,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -2141,7 +2141,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 23,                                !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -2158,7 +2158,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 24,                                !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 23,                                !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2173,7 +2173,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 4,                                 !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -2190,7 +2190,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
   Face 5,                                 !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -2207,7 +2207,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 6,                                 !- Name
   Door,                                   !- Surface Type
-  Interior Door,                          !- Construction Name
+  PuertaInterior,                         !- Construction Name
   Face 5,                                 !- Building Surface Name
   Face 36,                                !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2222,7 +2222,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 7,                                 !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 1, !- Construction Name
+  MurosExteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Outdoors,                               !- Outside Boundary Condition
@@ -2239,7 +2239,7 @@ BuildingSurface:Detailed,
 FenestrationSurface:Detailed,
   Face 8,                                 !- Name
   Window,                                 !- Surface Type
-  ASHRAE 189.1-2009 ExtWindow ClimateZone 1, !- Construction Name
+  Ventana,                                !- Construction Name
   Face 7,                                 !- Building Surface Name
   ,                                       !- Outside Boundary Condition Object
   ,                                       !- View Factor to Ground
@@ -2254,7 +2254,7 @@ FenestrationSurface:Detailed,
 BuildingSurface:Detailed,
   Face 9,                                 !- Name
   Wall,                                   !- Surface Type
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Construction Name
+  MurosInteriores,                        !- Construction Name
   SalaComedor,                            !- Zone Name
   E_SalaComedor,                          !- Space Name
   Surface,                                !- Outside Boundary Condition
@@ -2323,6 +2323,17 @@ GlobalGeometryRules,
   Relative;                               !- Rectangular Surface Coordinate System
 
 Material,
+  CAD,                                    !- Name
+  Rough,                                  !- Roughness
+  0.1,                                    !- Thickness {m}
+  2,                                      !- Conductivity {W/m-K}
+  2500,                                   !- Density {kg/m3}
+  1000,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.3,                                    !- Solar Absorptance
+  0.3;                                    !- Visible Absorptance
+
+Material,
   F08 Metal surface,                      !- Name
   Smooth,                                 !- Roughness
   0.0008,                                 !- Thickness {m}
@@ -2335,6 +2346,17 @@ Material,
 
 Material,
   G05 25mm wood,                          !- Name
+  MediumSmooth,                           !- Roughness
+  0.0254,                                 !- Thickness {m}
+  0.15,                                   !- Conductivity {W/m-K}
+  608,                                    !- Density {kg/m3}
+  1630,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.5,                                    !- Solar Absorptance
+  0.5;                                    !- Visible Absorptance
+
+Material,
+  G05 25mm wood 1,                        !- Name
   MediumSmooth,                           !- Roughness
   0.0254,                                 !- Thickness {m}
   0.15,                                   !- Conductivity {W/m-K}
@@ -2400,6 +2422,24 @@ Material,
   0.7;                                    !- Visible Absorptance
 
 WindowMaterial:Glazing,
+  Clear 3mm,                              !- Name
+  SpectralAverage,                        !- Optical Data Type
+  ,                                       !- Window Glass Spectral Data Set Name
+  0.00299999999999999,                    !- Thickness {m}
+  0.837,                                  !- Solar Transmittance at Normal Incidence
+  0.075,                                  !- Front Side Solar Reflectance at Normal Incidence
+  0,                                      !- Back Side Solar Reflectance at Normal Incidence
+  0.898,                                  !- Visible Transmittance at Normal Incidence
+  0.081,                                  !- Front Side Visible Reflectance at Normal Incidence
+  0,                                      !- Back Side Visible Reflectance at Normal Incidence
+  0,                                      !- Infrared Transmittance at Normal Incidence
+  0.84,                                   !- Front Side Infrared Hemispherical Emissivity
+  0.84,                                   !- Back Side Infrared Hemispherical Emissivity
+  0.9,                                    !- Conductivity {W/m-K}
+  1,                                      !- Dirt Correction Factor for Solar and Visible Transmittance
+  No;                                     !- Solar Diffusing
+
+WindowMaterial:Glazing,
   Theoretical Glass [167],                !- Name
   SpectralAverage,                        !- Optical Data Type
   ,                                       !- Window Glass Spectral Data Set Name
@@ -2442,12 +2482,6 @@ Construction,
   Metal Decking;                          !- Layer 3
 
 Construction,
-  ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 4 Reversed, !- Name
-  Metal Decking,                          !- Layer 1
-  Roof Insulation [18],                   !- Layer 2
-  Roof Membrane;                          !- Layer 3
-
-Construction,
   ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 5, !- Name
   Roof Membrane,                          !- Layer 1
   Roof Insulation [18],                   !- Layer 2
@@ -2488,6 +2522,10 @@ Construction,
   Theoretical Glass [167];                !- Layer 1
 
 Construction,
+  Entrepiso,                              !- Name
+  CAD;                                    !- Layer 1
+
+Construction,
   Exterior Door,                          !- Name
   F08 Metal surface,                      !- Layer 1
   I01 25mm insulation board;              !- Layer 2
@@ -2495,6 +2533,30 @@ Construction,
 Construction,
   Interior Door,                          !- Name
   G05 25mm wood;                          !- Layer 1
+
+Construction,
+  MurosExteriores,                        !- Name
+  CAD;                                    !- Layer 1
+
+Construction,
+  MurosInteriores,                        !- Name
+  CAD;                                    !- Layer 1
+
+Construction,
+  PuertaExterior,                         !- Name
+  G05 25mm wood 1;                        !- Layer 1
+
+Construction,
+  PuertaInterior,                         !- Name
+  G05 25mm wood 1;                        !- Layer 1
+
+Construction,
+  Techo,                                  !- Name
+  CAD;                                    !- Layer 1
+
+Construction,
+  Ventana,                                !- Name
+  Clear 3mm;                              !- Layer 1
 
 Schedule:Constant,
   Always On Discrete,                     !- Name
@@ -2520,11 +2582,6 @@ Site:Location,
   39.7653,                                !- Longitude {deg}
   -6,                                     !- Time Zone {hr}
   995.8;                                  !- Elevation {m}
-
-Output:Variable,
-  *,                                      !- Key Value
-  Zone Mean Air Temperature,              !- Variable Name
-  timestep;                               !- Reporting Frequency
 
 OutputControl:Table:Style,
   HTML;                                   !- Column Separator
