@@ -230,7 +230,35 @@ Space,
   Banio,                                  !- Zone Name
   ,                                       !- Ceiling Height {m}
   ,                                       !- Volume {m3}
-  ;                                       !- Floor Area {m2}
+  ,                                       !- Floor Area {m2}
+  Departamento;                           !- Space Type
+
+SpaceList,
+  Departamento,                           !- Name
+  E_Banio,                                !- Space Name 1
+  E_Recamara2,                            !- Space Name 2
+  E_Escaleras,                            !- Space Name 3
+  E_Cocina,                               !- Space Name 4
+  E_RPrincipal,                           !- Space Name 5
+  E_Closet,                               !- Space Name 6
+  E_Recamara3,                            !- Space Name 7
+  E_Banio2,                               !- Space Name 8
+  E_SalaComedor,                          !- Space Name 9
+  E_Escaleras2;                           !- Space Name 10
+
+ZoneInfiltration:DesignFlowRate,
+  189.1-2009 - Office - BreakRoom - CZ1-3 Infiltration, !- Name
+  Departamento,                           !- Zone or ZoneList or Space or SpaceList Name
+  ,                                       !- Schedule Name
+  AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+  ,                                       !- Design Flow Rate {m3/s}
+  ,                                       !- Flow Rate per Floor Area {m3/s-m2}
+  ,                                       !- Flow Rate per Exterior Surface Area {m3/s-m2}
+  10,                                     !- Air Changes per Hour {1/hr}
+  ,                                       !- Constant Term Coefficient
+  ,                                       !- Temperature Term Coefficient
+  ,                                       !- Velocity Term Coefficient
+  ;                                       !- Velocity Squared Term Coefficient
 
 BuildingSurface:Detailed,
   Face 42,                                !- Name
@@ -384,7 +412,8 @@ Space,
   Banio2,                                 !- Zone Name
   ,                                       !- Ceiling Height {m}
   ,                                       !- Volume {m3}
-  ;                                       !- Floor Area {m2}
+  ,                                       !- Floor Area {m2}
+  Departamento;                           !- Space Type
 
 BuildingSurface:Detailed,
   Face 63,                                !- Name
@@ -557,7 +586,8 @@ Space,
   Closet,                                 !- Zone Name
   ,                                       !- Ceiling Height {m}
   ,                                       !- Volume {m3}
-  ;                                       !- Floor Area {m2}
+  ,                                       !- Floor Area {m2}
+  Departamento;                           !- Space Type
 
 BuildingSurface:Detailed,
   Face 25,                                !- Name
@@ -715,7 +745,8 @@ Space,
   Cocina,                                 !- Zone Name
   ,                                       !- Ceiling Height {m}
   ,                                       !- Volume {m3}
-  ;                                       !- Floor Area {m2}
+  ,                                       !- Floor Area {m2}
+  Departamento;                           !- Space Type
 
 BuildingSurface:Detailed,
   Face 33,                                !- Name
@@ -888,7 +919,8 @@ Space,
   Escaleras,                              !- Zone Name
   ,                                       !- Ceiling Height {m}
   ,                                       !- Volume {m3}
-  ;                                       !- Floor Area {m2}
+  ,                                       !- Floor Area {m2}
+  Departamento;                           !- Space Type
 
 BuildingSurface:Detailed,
   Face 100,                               !- Name
@@ -1060,7 +1092,8 @@ Space,
   Escaleras2,                             !- Zone Name
   ,                                       !- Ceiling Height {m}
   ,                                       !- Volume {m3}
-  ;                                       !- Floor Area {m2}
+  ,                                       !- Floor Area {m2}
+  Departamento;                           !- Space Type
 
 BuildingSurface:Detailed,
   Face 102,                               !- Name
@@ -1199,7 +1232,8 @@ Space,
   Recamara2,                              !- Zone Name
   ,                                       !- Ceiling Height {m}
   ,                                       !- Volume {m3}
-  ;                                       !- Floor Area {m2}
+  ,                                       !- Floor Area {m2}
+  Departamento;                           !- Space Type
 
 BuildingSurface:Detailed,
   Face 72,                                !- Name
@@ -1372,7 +1406,8 @@ Space,
   Recamara3,                              !- Zone Name
   ,                                       !- Ceiling Height {m}
   ,                                       !- Volume {m3}
-  ;                                       !- Floor Area {m2}
+  ,                                       !- Floor Area {m2}
+  Departamento;                           !- Space Type
 
 BuildingSurface:Detailed,
   Face 81,                                !- Name
@@ -1598,7 +1633,8 @@ Space,
   RPrincipal,                             !- Zone Name
   ,                                       !- Ceiling Height {m}
   ,                                       !- Volume {m3}
-  ;                                       !- Floor Area {m2}
+  ,                                       !- Floor Area {m2}
+  Departamento;                           !- Space Type
 
 BuildingSurface:Detailed,
   Face 50,                                !- Name
@@ -1835,7 +1871,8 @@ Space,
   SalaComedor,                            !- Zone Name
   ,                                       !- Ceiling Height {m}
   ,                                       !- Volume {m3}
-  ;                                       !- Floor Area {m2}
+  ,                                       !- Floor Area {m2}
+  Departamento;                           !- Space Type
 
 BuildingSurface:Detailed,
   Face 0,                                 !- Name
@@ -2367,17 +2404,6 @@ Material,
   0.5;                                    !- Visible Absorptance
 
 Material,
-  G05 25mm wood 1,                        !- Name
-  MediumSmooth,                           !- Roughness
-  0.0254,                                 !- Thickness {m}
-  0.15,                                   !- Conductivity {W/m-K}
-  608,                                    !- Density {kg/m3}
-  1630,                                   !- Specific Heat {J/kg-K}
-  0.9,                                    !- Thermal Absorptance
-  0.5,                                    !- Solar Absorptance
-  0.5;                                    !- Visible Absorptance
-
-Material,
   I01 25mm insulation board,              !- Name
   MediumRough,                            !- Roughness
   0.0254,                                 !- Thickness {m}
@@ -2420,6 +2446,17 @@ Material,
   0.9,                                    !- Thermal Absorptance
   0.3,                                    !- Solar Absorptance
   0.3;                                    !- Visible Absorptance
+
+Material,
+  PuertaExterior,                         !- Name
+  MediumSmooth,                           !- Roughness
+  0.05,                                   !- Thickness {m}
+  0.15,                                   !- Conductivity {W/m-K}
+  608,                                    !- Density {kg/m3}
+  1630,                                   !- Specific Heat {J/kg-K}
+  0.9,                                    !- Thermal Absorptance
+  0.5,                                    !- Solar Absorptance
+  0.5;                                    !- Visible Absorptance
 
 Material,
   Roof Insulation [18],                   !- Name
@@ -2618,11 +2655,11 @@ Construction,
 
 Construction,
   PuertaExterior,                         !- Name
-  G05 25mm wood 1;                        !- Layer 1
+  PuertaExterior;                         !- Layer 1
 
 Construction,
   PuertaInterior,                         !- Name
-  G05 25mm wood 1;                        !- Layer 1
+  G05 25mm wood;                          !- Layer 1
 
 Construction,
   Techo,                                  !- Name
@@ -2635,6 +2672,159 @@ Construction,
 Construction,
   Ventana,                                !- Name
   Clear 3mm;                              !- Layer 1
+
+ScheduleTypeLimits,
+  ActivityLevel,                          !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  ,                                       !- Upper Limit Value {BasedOnField A3}
+  Continuous,                             !- Numeric Type
+  activitylevel;                          !- Unit Type
+
+ScheduleTypeLimits,
+  Capacity,                               !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  ,                                       !- Upper Limit Value {BasedOnField A3}
+  Continuous,                             !- Numeric Type
+  capacity;                               !- Unit Type
+
+ScheduleTypeLimits,
+  Any Number;                             !- Name
+
+ScheduleTypeLimits,
+  DeltaTemperature,                       !- Name
+  ,                                       !- Lower Limit Value {BasedOnField A3}
+  ,                                       !- Upper Limit Value {BasedOnField A3}
+  Continuous,                             !- Numeric Type
+  deltatemperature;                       !- Unit Type
+
+ScheduleTypeLimits,
+  Dimensionless,                          !- Name
+  ,                                       !- Lower Limit Value {BasedOnField A3}
+  ,                                       !- Upper Limit Value {BasedOnField A3}
+  Continuous;                             !- Numeric Type
+
+ScheduleTypeLimits,
+  Dimensionless 1,                        !- Name
+  -1,                                     !- Lower Limit Value {BasedOnField A3}
+  1,                                      !- Upper Limit Value {BasedOnField A3}
+  Continuous;                             !- Numeric Type
+
+ScheduleTypeLimits,
+  Dimensionless 2,                        !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  ,                                       !- Upper Limit Value {BasedOnField A3}
+  Continuous;                             !- Numeric Type
+
+ScheduleTypeLimits,
+  Dimensionless 3,                        !- Name
+  0.1,                                    !- Lower Limit Value {BasedOnField A3}
+  1000,                                   !- Upper Limit Value {BasedOnField A3}
+  Continuous;                             !- Numeric Type
+
+ScheduleTypeLimits,
+  Dimensionless 4,                        !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  1,                                      !- Upper Limit Value {BasedOnField A3}
+  Continuous,                             !- Numeric Type
+  dimensionless;                          !- Unit Type
+
+ScheduleTypeLimits,
+  Fractional,                             !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  1,                                      !- Upper Limit Value {BasedOnField A3}
+  Continuous;                             !- Numeric Type
+
+ScheduleTypeLimits,
+  Integer,                                !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  ,                                       !- Upper Limit Value {BasedOnField A3}
+  Discrete;                               !- Numeric Type
+
+ScheduleTypeLimits,
+  Integer 1,                              !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  4,                                      !- Upper Limit Value {BasedOnField A3}
+  Discrete;                               !- Numeric Type
+
+ScheduleTypeLimits,
+  OnOff,                                  !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  1,                                      !- Upper Limit Value {BasedOnField A3}
+  Discrete,                               !- Numeric Type
+  availability;                           !- Unit Type
+
+ScheduleTypeLimits,
+  Percent,                                !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  100,                                    !- Upper Limit Value {BasedOnField A3}
+  Continuous,                             !- Numeric Type
+  percent;                                !- Unit Type
+
+ScheduleTypeLimits,
+  Temperature,                            !- Name
+  ,                                       !- Lower Limit Value {BasedOnField A3}
+  ,                                       !- Upper Limit Value {BasedOnField A3}
+  Continuous,                             !- Numeric Type
+  temperature;                            !- Unit Type
+
+ScheduleTypeLimits,
+  Temperature 1,                          !- Name
+  ,                                       !- Lower Limit Value {BasedOnField A3}
+  0,                                      !- Upper Limit Value {BasedOnField A3}
+  Continuous,                             !- Numeric Type
+  temperature;                            !- Unit Type
+
+ScheduleTypeLimits,
+  Temperature 2,                          !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  ,                                       !- Upper Limit Value {BasedOnField A3}
+  Continuous,                             !- Numeric Type
+  temperature;                            !- Unit Type
+
+ScheduleTypeLimits,
+  Temperature 3,                          !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  100,                                    !- Upper Limit Value {BasedOnField A3}
+  Continuous,                             !- Numeric Type
+  temperature;                            !- Unit Type
+
+ScheduleTypeLimits,
+  Velocity,                               !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  ,                                       !- Upper Limit Value {BasedOnField A3}
+  Continuous,                             !- Numeric Type
+  velocity;                               !- Unit Type
+
+Schedule:Day:Interval,
+  Schedule Day 1,                         !- Name
+  Dimensionless,                          !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  24:00,                                  !- Time 1 {hh:mm}
+  0.5;                                    !- Value Until Time 1
+
+Schedule:Week:Daily,
+  0.5ACH Week Rule - Jan1-Dec31,          !- Name
+  Schedule Day 1,                         !- Sunday Schedule:Day Name
+  Schedule Day 1,                         !- Monday Schedule:Day Name
+  Schedule Day 1,                         !- Tuesday Schedule:Day Name
+  Schedule Day 1,                         !- Wednesday Schedule:Day Name
+  Schedule Day 1,                         !- Thursday Schedule:Day Name
+  Schedule Day 1,                         !- Friday Schedule:Day Name
+  Schedule Day 1,                         !- Saturday Schedule:Day Name
+  Schedule Day 1,                         !- Holiday Schedule:Day Name
+  Schedule Day 1,                         !- SummerDesignDay Schedule:Day Name
+  Schedule Day 1,                         !- WinterDesignDay Schedule:Day Name
+  Schedule Day 1,                         !- CustomDay1 Schedule:Day Name
+  Schedule Day 1;                         !- CustomDay2 Schedule:Day Name
+
+Schedule:Year,
+  0.5ACH,                                 !- Name
+  Dimensionless,                          !- Schedule Type Limits Name
+  0.5ACH Week Rule - Jan1-Dec31,          !- Schedule:Week Name 1
+  1,                                      !- Start Month 1
+  1,                                      !- Start Day 1
+  12,                                     !- End Month 1
+  31;                                     !- End Day 1
 
 Schedule:Constant,
   Always On Discrete,                     !- Name
@@ -2671,6 +2861,11 @@ Output:Variable,
   Site Outdoor Air Drybulb Temperature,   !- Variable Name
   timestep;                               !- Reporting Frequency
 
+Output:Variable,
+  *,                                      !- Key Value
+  Infiltration Air Change Rate,           !- Variable Name
+  timestep;                               !- Reporting Frequency
+
 OutputControl:Table:Style,
   HTML;                                   !- Column Separator
 
@@ -2686,277 +2881,6 @@ LifeCycleCost:NonrecurringCost,
   Construction,                           !- Category
   0,                                      !- Cost
   ServicePeriod;                          !- Start of Costs
-
-Output:Variable,
-  ,                                       !- Key Value
-  Site Outdoor Air Drybulb Temperature,   !- Variable Name
-  monthly;                                !- Reporting Frequency
-
-Output:Variable,
-  ,                                       !- Key Value
-  Zone Air Temperature,                   !- Variable Name
-  hourly;                                 !- Reporting Frequency
-
-Output:Variable,
-  ,                                       !- Key Value
-  Zone Air Relative Humidity,             !- Variable Name
-  hourly;                                 !- Reporting Frequency
-
-Output:Table:Monthly,
-  Building Energy Performance - FuelOilNo1, !- Name
-  2,                                      !- Digits After Decimal
-  Heating:FuelOilNo1,                     !- Variable or Meter Name 1
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
-  Cooling:FuelOilNo1,                     !- Variable or Meter Name 2
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
-  Interior Lighting:FuelOilNo1,           !- Variable or Meter Name 3
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
-  Exterior Lighting:FuelOilNo1,           !- Variable or Meter Name 4
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
-  Interior Equipment:FuelOilNo1,          !- Variable or Meter Name 5
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
-  Exterior Equipment:FuelOilNo1,          !- Variable or Meter Name 6
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
-  Fans:FuelOilNo1,                        !- Variable or Meter Name 7
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
-  Pumps:FuelOilNo1,                       !- Variable or Meter Name 8
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
-  Heat Rejection:FuelOilNo1,              !- Variable or Meter Name 9
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
-  Humidification:FuelOilNo1,              !- Variable or Meter Name 10
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
-  Heat Recovery:FuelOilNo1,               !- Variable or Meter Name 11
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
-  Water Systems:FuelOilNo1,               !- Variable or Meter Name 12
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
-  Refrigeration:FuelOilNo1,               !- Variable or Meter Name 13
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
-  Generators:FuelOilNo1,                  !- Variable or Meter Name 14
-  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
-
-Output:Table:Monthly,
-  Building Energy Performance - FuelOilNo2, !- Name
-  2,                                      !- Digits After Decimal
-  Heating:FuelOilNo2,                     !- Variable or Meter Name 1
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
-  Cooling:FuelOilNo2,                     !- Variable or Meter Name 2
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
-  Interior Lighting:FuelOilNo2,           !- Variable or Meter Name 3
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
-  Exterior Lighting:FuelOilNo2,           !- Variable or Meter Name 4
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
-  Interior Equipment:FuelOilNo2,          !- Variable or Meter Name 5
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
-  Exterior Equipment:FuelOilNo2,          !- Variable or Meter Name 6
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
-  Fans:FuelOilNo2,                        !- Variable or Meter Name 7
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
-  Pumps:FuelOilNo2,                       !- Variable or Meter Name 8
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
-  Heat Rejection:FuelOilNo2,              !- Variable or Meter Name 9
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
-  Humidification:FuelOilNo2,              !- Variable or Meter Name 10
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
-  Heat Recovery:FuelOilNo2,               !- Variable or Meter Name 11
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
-  Water Systems:FuelOilNo2,               !- Variable or Meter Name 12
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
-  Refrigeration:FuelOilNo2,               !- Variable or Meter Name 13
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
-  Generators:FuelOilNo2,                  !- Variable or Meter Name 14
-  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
-
-Output:Table:Monthly,
-  Building Energy Performance - PropaneGas, !- Name
-  2,                                      !- Digits After Decimal
-  Heating:PropaneGas,                     !- Variable or Meter Name 1
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
-  Cooling:PropaneGas,                     !- Variable or Meter Name 2
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
-  Interior Lighting:PropaneGas,           !- Variable or Meter Name 3
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
-  Exterior Lighting:PropaneGas,           !- Variable or Meter Name 4
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
-  Interior Equipment:PropaneGas,          !- Variable or Meter Name 5
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
-  Exterior Equipment:PropaneGas,          !- Variable or Meter Name 6
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
-  Fans:PropaneGas,                        !- Variable or Meter Name 7
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
-  Pumps:PropaneGas,                       !- Variable or Meter Name 8
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
-  Heat Rejection:PropaneGas,              !- Variable or Meter Name 9
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
-  Humidification:PropaneGas,              !- Variable or Meter Name 10
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
-  Heat Recovery:PropaneGas,               !- Variable or Meter Name 11
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
-  Water Systems:PropaneGas,               !- Variable or Meter Name 12
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
-  Refrigeration:PropaneGas,               !- Variable or Meter Name 13
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
-  Generators:PropaneGas,                  !- Variable or Meter Name 14
-  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
-
-Output:Table:Monthly,
-  Building Energy Performance - Coal,     !- Name
-  2,                                      !- Digits After Decimal
-  Heating:Coal,                           !- Variable or Meter Name 1
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
-  Cooling:Coal,                           !- Variable or Meter Name 2
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
-  Interior Lighting:Coal,                 !- Variable or Meter Name 3
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
-  Exterior Lighting:Coal,                 !- Variable or Meter Name 4
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
-  Interior Equipment:Coal,                !- Variable or Meter Name 5
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
-  Exterior Equipment:Coal,                !- Variable or Meter Name 6
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
-  Fans:Coal,                              !- Variable or Meter Name 7
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
-  Pumps:Coal,                             !- Variable or Meter Name 8
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
-  Heat Rejection:Coal,                    !- Variable or Meter Name 9
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
-  Humidification:Coal,                    !- Variable or Meter Name 10
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
-  Heat Recovery:Coal,                     !- Variable or Meter Name 11
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
-  Water Systems:Coal,                     !- Variable or Meter Name 12
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
-  Refrigeration:Coal,                     !- Variable or Meter Name 13
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
-  Generators:Coal,                        !- Variable or Meter Name 14
-  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
-
-Output:Table:Monthly,
-  Building Energy Performance - Diesel,   !- Name
-  2,                                      !- Digits After Decimal
-  Heating:Diesel,                         !- Variable or Meter Name 1
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
-  Cooling:Diesel,                         !- Variable or Meter Name 2
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
-  Interior Lighting:Diesel,               !- Variable or Meter Name 3
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
-  Exterior Lighting:Diesel,               !- Variable or Meter Name 4
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
-  Interior Equipment:Diesel,              !- Variable or Meter Name 5
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
-  Exterior Equipment:Diesel,              !- Variable or Meter Name 6
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
-  Fans:Diesel,                            !- Variable or Meter Name 7
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
-  Pumps:Diesel,                           !- Variable or Meter Name 8
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
-  Heat Rejection:Diesel,                  !- Variable or Meter Name 9
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
-  Humidification:Diesel,                  !- Variable or Meter Name 10
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
-  Heat Recovery:Diesel,                   !- Variable or Meter Name 11
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
-  Water Systems:Diesel,                   !- Variable or Meter Name 12
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
-  Refrigeration:Diesel,                   !- Variable or Meter Name 13
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
-  Generators:Diesel,                      !- Variable or Meter Name 14
-  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
-
-Output:Table:Monthly,
-  Building Energy Performance - Gasoline, !- Name
-  2,                                      !- Digits After Decimal
-  Heating:Gasoline,                       !- Variable or Meter Name 1
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
-  Cooling:Gasoline,                       !- Variable or Meter Name 2
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
-  Interior Lighting:Gasoline,             !- Variable or Meter Name 3
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
-  Exterior Lighting:Gasoline,             !- Variable or Meter Name 4
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
-  Interior Equipment:Gasoline,            !- Variable or Meter Name 5
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
-  Exterior Equipment:Gasoline,            !- Variable or Meter Name 6
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
-  Fans:Gasoline,                          !- Variable or Meter Name 7
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
-  Pumps:Gasoline,                         !- Variable or Meter Name 8
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
-  Heat Rejection:Gasoline,                !- Variable or Meter Name 9
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
-  Humidification:Gasoline,                !- Variable or Meter Name 10
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
-  Heat Recovery:Gasoline,                 !- Variable or Meter Name 11
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
-  Water Systems:Gasoline,                 !- Variable or Meter Name 12
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
-  Refrigeration:Gasoline,                 !- Variable or Meter Name 13
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
-  Generators:Gasoline,                    !- Variable or Meter Name 14
-  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
-
-Output:Table:Monthly,
-  Building Energy Performance - OtherFuel1, !- Name
-  2,                                      !- Digits After Decimal
-  Heating:OtherFuel1,                     !- Variable or Meter Name 1
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
-  Cooling:OtherFuel1,                     !- Variable or Meter Name 2
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
-  Interior Lighting:OtherFuel1,           !- Variable or Meter Name 3
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
-  Exterior Lighting:OtherFuel1,           !- Variable or Meter Name 4
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
-  Interior Equipment:OtherFuel1,          !- Variable or Meter Name 5
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
-  Exterior Equipment:OtherFuel1,          !- Variable or Meter Name 6
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
-  Fans:OtherFuel1,                        !- Variable or Meter Name 7
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
-  Pumps:OtherFuel1,                       !- Variable or Meter Name 8
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
-  Heat Rejection:OtherFuel1,              !- Variable or Meter Name 9
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
-  Humidification:OtherFuel1,              !- Variable or Meter Name 10
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
-  Heat Recovery:OtherFuel1,               !- Variable or Meter Name 11
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
-  Water Systems:OtherFuel1,               !- Variable or Meter Name 12
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
-  Refrigeration:OtherFuel1,               !- Variable or Meter Name 13
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
-  Generators:OtherFuel1,                  !- Variable or Meter Name 14
-  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
-
-Output:Table:Monthly,
-  Building Energy Performance - OtherFuel2, !- Name
-  2,                                      !- Digits After Decimal
-  Heating:OtherFuel2,                     !- Variable or Meter Name 1
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 1
-  Cooling:OtherFuel2,                     !- Variable or Meter Name 2
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 2
-  Interior Lighting:OtherFuel2,           !- Variable or Meter Name 3
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 3
-  Exterior Lighting:OtherFuel2,           !- Variable or Meter Name 4
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 4
-  Interior Equipment:OtherFuel2,          !- Variable or Meter Name 5
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 5
-  Exterior Equipment:OtherFuel2,          !- Variable or Meter Name 6
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 6
-  Fans:OtherFuel2,                        !- Variable or Meter Name 7
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 7
-  Pumps:OtherFuel2,                       !- Variable or Meter Name 8
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 8
-  Heat Rejection:OtherFuel2,              !- Variable or Meter Name 9
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 9
-  Humidification:OtherFuel2,              !- Variable or Meter Name 10
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 10
-  Heat Recovery:OtherFuel2,               !- Variable or Meter Name 11
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 11
-  Water Systems:OtherFuel2,               !- Variable or Meter Name 12
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 12
-  Refrigeration:OtherFuel2,               !- Variable or Meter Name 13
-  SumOrAverage,                           !- Aggregation Type for Variable or Meter 13
-  Generators:OtherFuel2,                  !- Variable or Meter Name 14
-  SumOrAverage;                           !- Aggregation Type for Variable or Meter 14
 
 Output:Table:Monthly,
   Building Energy Performance - Electricity, !- Name

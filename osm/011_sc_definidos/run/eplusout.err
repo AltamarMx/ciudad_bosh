@@ -1,6 +1,9 @@
-Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.10 18:00,
+Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.12 16:05,
    ** Warning ** CheckEnvironmentSpecifications: SimulationControl specified doing design day simulations, but no design environments specified.
    **   ~~~   ** ...No design environment results produced. For these results, add appropriate SizingPeriod:* objects for your simulation.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS ON DISCRETE", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS OFF DISCRETE", Blank Schedule Type Limits Name input -- will not be validated.
+   ** Warning ** ProcessScheduleInput: Schedule:Constant="ALWAYS ON CONTINUOUS", Blank Schedule Type Limits Name input -- will not be validated.
    ** Warning ** GetSurfaceData: There are 25 coincident/collinear vertices; These have been deleted unless the deletion would bring the number of surface sides < 3.
    **   ~~~   ** For explicit details on each problem surface, use Output:Diagnostics,DisplayExtraWarnings;
    ** Warning ** CheckUsedConstructions: There are 14 nominally unused constructions in input.
@@ -33,9 +36,9 @@ Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.10 18:00,
    ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= "U.S. AVG  COMMERCIAL-COAL" has no energy cost. 
    **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
    ************* Simulation Error Summary *************
-   ************* There are 3 unused schedules in input.
-   ************* There are 3 unused week schedules in input.
-   ************* There are 3 unused day schedules in input.
+   ************* There are 4 unused schedules in input.
+   ************* There are 4 unused week schedules in input.
+   ************* There are 4 unused day schedules in input.
    ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
    *************
    ************* ===== Final Error Summary =====
@@ -47,4 +50,4 @@ Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2024.06.10 18:00,
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 40 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 18.85sec
+   ************* EnergyPlus Completed Successfully-- 43 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  8.42sec
